@@ -10,20 +10,40 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header">
         <div class="container">
-          
+          <nav class="header__nav">
+            <a href="index.html">
+              <picture>
+                <source media="(max-width: 320px)" width="35" height="35" srcset="./img/svg/logo-mobile.svg">
+                <source media="(max-width: 768px)" width="215" height="55" src="./img/svg/logo.svg">
+                <img class="header__logo" src="./img/svg/logo.svg" width="215" height="55" alt="Логотип Smart Device.">
+              </picture>
+            </a>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="mailto:info@sd.ru">
+                  <svg class="header__icon" width="20" height="20" aria-label="Иконка почты.">
+                    <use xlink:href="./img/sprite.svg#email"></use>
+                  </svg>
+                  <nav class="header__text">info@sd.ru</nav>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="tel:+74950005252">
+                  <svg class="header__icon" width="20" height="20" aria-label="Иконка телефона.">
+                    <use xlink:href="./img/sprite.svg#tel"></use>
+                  </svg>
+                  <nav class="header__text">+7 (495) 000 52 52</nav>
+                </a>
+              </li>
+            </ul>
+            <button class="header__button" type="button">Заказать зконок</button>
+          </nav>
         </div>
       </header>
       <main>
         <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
         </section>
       </main>
       <footer>

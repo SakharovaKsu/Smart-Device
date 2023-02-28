@@ -1,0 +1,127 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: linear-gradient(180deg, $color-black-pearl 80%, $color-transparent);
+  padding: 35px 0;
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__logo {
+    @include hover {
+      opacity: 0.5;
+    }
+
+    @include focus{
+      opacity: 0.5;
+    }
+
+    @include active {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 120px;
+  }
+
+  &__link {
+    display: flex;
+    color: $color-alice-blue;
+
+    @include hover {
+      color: $color-deep-sky-blue;
+    }
+
+    @include focus{
+      color: $color-deep-sky-blue;
+    }
+  }
+
+  &__icon {
+    margin-right: 15px;
+  }
+
+  &__button {
+    font-family: $ff-roboto-condensed;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-alice-blue;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 1px solid $color-alice-blue;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    @include hover {
+      color: $color-black-pearl;
+      background-color: $color-alice-blue;
+    }
+
+    @include focus {
+      color: $color-black-pearl;
+      background-color: $color-alice-blue;
+    }
+
+    @include active {
+      color: $color-black-pearl;
+      border: 1px solid $color-deep-sky-blue;
+    }
+
+    @include hover-focus {
+      color: $color-black-pearl;
+      background-color: $color-alice-blue;
+    }
+
+    &:active {
+      color: $color-black-pearl;
+      border: 1px solid $color-deep-sky-blue;
+    }
+  }
+
+  @include vp-1023 {
+    position: relative;
+    padding: 20px 45px 25px 25px;
+
+    &__nav {
+      justify-content: space-between;
+    }
+
+    &__list {
+      gap: 20px;
+    }
+
+    &__link {
+      padding: 10px;
+    }
+
+    &__icon {
+      margin: 0;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    padding: 10px 20px 20px 10px;
+  }
+}
