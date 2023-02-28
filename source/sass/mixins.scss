@@ -18,13 +18,7 @@
   }
 }
 
-@mixin active {
-  &.focus-visible:active {
-    @content;
-  }
-}
-
-@mixin hover-focus {
+@mixin hover-focus-visible {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
       @content;
@@ -32,6 +26,22 @@
   }
 
   &.focus-visible:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  &:hover {
+    @content;
+  }
+
+  @include focus {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active {
     @content;
   }
 }

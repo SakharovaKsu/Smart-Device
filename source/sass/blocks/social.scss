@@ -1,0 +1,27 @@
+.social {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  &__icon {
+    fill: $color-alice-blue-ligth;
+
+    @include hover-focus {
+      fill: $color-deep-sky-blue;
+    }
+
+    @include active {
+      fill: $color-default-white;
+    }
+  }
+
+  @include vp-767 {
+    &__list {
+      margin-bottom: 25px;
+    }
+  }
+}

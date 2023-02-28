@@ -2,21 +2,18 @@
   position: fixed;
   z-index: 100;
   width: 100%;
-  background: linear-gradient(180deg, $color-black-pearl 80%, $color-transparent);
+  background: $black-to-right;
   padding: 35px 0;
 
   &__nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
   }
 
   &__logo {
-    @include hover {
-      opacity: 0.5;
-    }
-
-    @include focus{
+    @include hover-focus{
       opacity: 0.5;
     }
 
@@ -31,18 +28,20 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 120px;
+    padding-left: 0;
   }
 
   &__link {
     display: flex;
     color: $color-alice-blue;
 
-    @include hover {
+    @include hover-focus {
       color: $color-deep-sky-blue;
     }
 
-    @include focus{
+    @include active {
       color: $color-deep-sky-blue;
     }
   }
@@ -66,12 +65,7 @@
     padding: 10px 15px;
     cursor: pointer;
 
-    @include hover {
-      color: $color-black-pearl;
-      background-color: $color-alice-blue;
-    }
-
-    @include focus {
+    @include hover-focus {
       color: $color-black-pearl;
       background-color: $color-alice-blue;
     }
@@ -79,22 +73,13 @@
     @include active {
       color: $color-black-pearl;
       border: 1px solid $color-deep-sky-blue;
-    }
-
-    @include hover-focus {
-      color: $color-black-pearl;
-      background-color: $color-alice-blue;
-    }
-
-    &:active {
-      color: $color-black-pearl;
-      border: 1px solid $color-deep-sky-blue;
+      background-color: $color-deep-sky-blue;
     }
   }
 
   @include vp-1023 {
     position: relative;
-    padding: 20px 45px 25px 25px;
+    padding: 20px 20px 25px 0;
 
     &__nav {
       justify-content: space-between;
