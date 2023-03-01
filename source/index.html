@@ -15,11 +15,11 @@
       <header class="header">
         <div class="container">
           <nav class="header__nav">
-            <a href="index.html">
+            <a class="logo" href="index.html">
               <picture>
                 <source media="(max-width: 320px)" width="35" height="35" srcset="./img/svg/logo-mobile.svg">
                 <source media="(max-width: 768px)" width="215" height="55" src="./img/svg/logo.svg">
-                <img class="header__logo" src="./img/svg/logo.svg" width="215" height="55" alt="Логотип Smart Device.">
+                <img class="logo__picture" src="./img/svg/logo.svg" width="215" height="55" alt="Логотип Smart Device.">
               </picture>
             </a>
             <ul class="header__list">
@@ -45,16 +45,22 @@
         </div>
       </header>
       <main>
+        <h1 class="visually-hidden">Smart Device</h1>
         <section class="intro">
+          <div class="container">
+            <h2 class="intro__title">Печатные платы</h2>
+            <p class="intro__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <button class="intro__button" type="button">Получить бесплатную консультацию</button>
+          </div>
         </section>
       </main>
 
       <!-- Подвал -->
       <footer class="footer">
-        <div class="container footer__box">
+        <div class="container container--header footer__box">
           <div class="footer__social social">
-            <a href="index.html">
-              <img class="footer__logo" src="./img/svg/logo.svg" width="215" height="55" alt="Логотип Smart Device.">
+            <a class="logo" href="index.html">
+              <img class="logo__picture" src="./img/svg/logo.svg" width="215" height="55" alt="Логотип Smart Device.">
             </a>
             <ul class="social__list">
               <li class="social__item">
@@ -82,9 +88,9 @@
           </div>
 
           <!-- Разделы сайта< -->
-          <div class="footer__container footer__container--nav">
-            <h2 class="footer__title footer__title--disabled">Разделы сайта</h2>
-            <ul class="footer__list footer__list--nav footer__list--disabled">
+          <div class="footer__nav accordeon">
+            <h2 class="footer__title accordion__control" aria-expanded="false">Разделы сайта</h2>
+            <ul class="footer__list footer__list--nav  accordion__content" aria-hidden="true">
               <li class="footer__item">
                 <a class="footer__link" href="#">О Компании</a>
               </li>
@@ -110,9 +116,9 @@
           </div>
 
           <!-- Контакты -->
-          <div class="footer__container footer__container--contact">
-            <h2 class="footer__title">Наш офис</h2>
-            <ul class="footer__list">
+          <div class="footer__contact accordeon">
+            <h2 class="footer__title accordion__control" aria-expanded="false">Наш офис</h2>
+            <ul class="footer__list accordion__content" aria-hidden="true">
               <li class="footer__item">
                 <p class="footer__text">г. Мытищи, Олимпийский проспект, д.10</p>
               </li>

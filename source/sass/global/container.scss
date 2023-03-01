@@ -14,5 +14,9 @@
 
   @include vp-767 {
     padding: 0 16px;
+
+    &--header {
+      padding: 0;
+    }
   }
 }

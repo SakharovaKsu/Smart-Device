@@ -1,0 +1,9 @@
+.accordion {
+  &__content {
+    display: none;
+  }
+
+  &__open .accordion__content {
+    display: block;
+  }
+}

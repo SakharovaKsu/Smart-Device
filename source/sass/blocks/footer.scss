@@ -62,7 +62,7 @@
       grid-area: social;
     }
 
-    &__container--nav {
+    &__nav {
       grid-area: nav;
     }
 
@@ -71,7 +71,7 @@
       flex-direction: column;
     }
 
-    &__container--contact {
+    &__contact {
       grid-area: contact;
     }
 
@@ -92,13 +92,19 @@
       flex-direction: column;
     }
 
-    &__container {
+    &__nav,
+    &__contact {
       position: relative;
+      border-top: 1px solid rgba(248, 253, 255, 0.7);
+    }
+
+    &__contact {
+      border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     }
 
     &__title {
       margin: 0;
-      padding: 20px 0;
+      padding: 20px 16px;
     }
 
     &__title::after {
@@ -107,26 +113,14 @@
       width: 15px;
       height: 1px;
       top: 28px;
-      right: 0;
-      background-color: $color-silver;
-    }
-
-    &__title--disabled::before {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 15px;
-      top: 20px;
-      right: 7px;
+      right: 16px;
       background-color: $color-silver;
     }
 
     &__list {
       margin: 0;
-    }
-
-    &__list--disabled {
-      display: none;
+      padding: 0 16px;
+      padding-bottom: 10px;
     }
 
     &__text {
