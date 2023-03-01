@@ -5,14 +5,14 @@ export const initAccordion = () => {
 		el.addEventListener('click', (e) => {
 			const self = e.currentTarget;
 
-			if(self.classList.contains('accordion__open')) {
-				self.classList.remove('accordion__open');
+			if(self.classList.contains('accordion__content--open')) {
+				self.classList.remove('accordion__content--open');
 			} else {
 				accordions.forEach(el => {
-					el.classList.remove('accordion__open');
+					el.classList.toggle('accordion__content--open');
 				})
 			} 
-
+			
 			// accordions.forEach(el => {
 			// 	el.classList.remove('accordion__open');
 

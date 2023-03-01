@@ -39,6 +39,15 @@
     border: none;
     border-radius: 3px;
     padding: 15px 25px;
+
+    @include hover-focus {
+      background-color: $color-alice-blue;
+      color: $color-deep-sky-blue;
+    }
+
+    @include active {
+      color: $color-black-pearl;
+    }
   }
 
   &__txt {

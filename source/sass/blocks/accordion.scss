@@ -28,11 +28,11 @@
       display: none;
     }
   
-    &__open .accordion__content {
+    &__content--open .accordion__content {
       display: block;
     }
 
-    &__open .accordion__control::after {
+    &__content--open .accordion__control::after {
       transform: rotate(90deg);
     }
   }
