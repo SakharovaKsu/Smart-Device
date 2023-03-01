@@ -1,141 +1,141 @@
 .footer {
   background-color: $color-black-pearl;
   padding: 50px 0 55px 0;
+}
 
-  &__box {
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  padding-left: 0;
+}
+
+.footer__list--nav {
+  display: grid;
+  grid-template-columns: 220px 220px;
+  column-gap: 30px;
+}
+
+.footer__title {
+  color: $color-default-white;
+  font-family: $ff-roboto-condensed;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer__link,
+.footer__text {
+  display: block;
+  line-height: 135%;
+  color: $color--white-transparency;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  @include hover-focus {
+    color: $color-deep-sky-blue;
+  }
+
+  @include active {
+    color: $color-default-white;
+  }
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .footer__box {
+    display: grid;
+    grid-template-areas: "social social"
+                          "nav contact";
+    row-gap: 35px;
+    column-gap: 130px;
+  }
+
+  .footer__social {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    grid-area: social;
   }
 
-  &__list {
-    padding-left: 0;
+  .footer__nav {
+    grid-area: nav;
   }
 
-  &__list--nav {
-    display: grid;
-    grid-template-columns: 220px 220px;
-    column-gap: 30px;
+  .footer__list--nav {
+    display: flex;
+    flex-direction: column;
   }
 
-  &__title {
-    color: $color-default-white;
-    font-family: $ff-roboto-condensed;
-    font-size: 15px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  .footer__contact {
+    grid-area: contact;
+  }
+
+  .footer__list--column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .footer__box {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer__social {
+    flex-direction: column;
+  }
+
+  .footer__nav,
+  .footer__contact {
+    position: relative;
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .footer__contact {
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .footer__title {
     margin: 0;
-    margin-bottom: 20px;
+    padding: 20px 16px;
   }
 
-  &__link,
-  &__text {
-    display: block;
-    line-height: 135%;
-    color: $color--white-transparency;
-    margin-bottom: 10px;
+  .footer__title::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    top: 28px;
+    right: 16px;
+    background-color: $color-silver;
   }
 
-  &__link {
-    @include hover-focus {
-      color: $color-deep-sky-blue;
-    }
-
-    @include active {
-      color: $color-default-white;
-    }
+  .footer__title--disabled::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    top: 20px;
+    right: 23px;
+    background-color: $color-silver;
   }
 
-  @include vp-1023 {
-    &__box {
-      display: grid;
-      grid-template-areas: "social social"
-                            "nav contact";
-      row-gap: 35px;
-      column-gap: 130px;
-    }
-
-    &__social {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      grid-area: social;
-    }
-
-    &__nav {
-      grid-area: nav;
-    }
-
-    &__list--nav {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__contact {
-      grid-area: contact;
-    }
-
-    &__list--column {
-      display: flex;
-      flex-direction: column;
-    }
+  .footer__list {
+    margin: 0;
+    padding: 0 16px;
+    padding-bottom: 10px;
   }
 
-  @include vp-767 {
-    &__box {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-
-    &__social {
-      flex-direction: column;
-    }
-
-    &__nav,
-    &__contact {
-      position: relative;
-      border-top: 1px solid rgba(248, 253, 255, 0.7);
-    }
-
-    &__contact {
-      border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-    }
-
-    &__title {
-      margin: 0;
-      padding: 20px 16px;
-    }
-
-    &__title::after {
-      position: absolute;
-      content: "";
-      width: 15px;
-      height: 1px;
-      top: 28px;
-      right: 16px;
-      background-color: $color-silver;
-    }
-
-    &__title--disabled::before {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 15px;
-      top: 20px;
-      right: 23px;
-      background-color: $color-silver;
-    }
-
-    &__list {
-      margin: 0;
-      padding: 0 16px;
-      padding-bottom: 10px;
-    }
-
-    &__text {
-      margin-top: 0;
-      margin-bottom: 15px;
-    }
+  .footer__text {
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 }

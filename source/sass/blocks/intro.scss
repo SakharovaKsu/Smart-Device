@@ -4,100 +4,114 @@
   padding-bottom: 280px;
   padding-left: 125px;
   background-color: $color-black-pearl;
+  background-image: url("../../img/background-image.jpg");
+  background-size: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
 
-  &__title {
-    font-size: $ff-roboto-condensed;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 94px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: $color-alice-blue;
-    margin: 0;
-    margin-bottom: 40px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background-image@2x.jpg");
+  }
+}
+
+.intro__title {
+  font-size: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.intro__text {
+  font-size: 22px;
+  line-height: 155%;
+  color: $color-alice-blue;
+  margin: 0;
+  margin-bottom: 40px;
+  max-width: 685px;
+}
+
+.intro__button {
+  font-size: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $color-alice-blue;
+  text-transform: uppercase;
+  background-color: $color-deep-sky-blue;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 25px;
+
+  @include hover-focus {
+    background-color: $color-alice-blue;
+    color: $color-deep-sky-blue;
   }
 
-  &__text {
-    font-size: 22px;
-    line-height: 155%;
-    color: $color-alice-blue;
-    margin: 0;
-    margin-bottom: 40px;
-    max-width: 685px;
+  @include active {
+    color: $color-black-pearl;
+  }
+}
+
+.intro__txt {
+  display: none;
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .intro {
+    padding: 80px 0 205px 0;
+    margin-top: -25px;
   }
 
-  &__button {
-    font-size: $ff-roboto-condensed;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: $color-alice-blue;
-    text-transform: uppercase;
-    background-color: $color-deep-sky-blue;
-    border: none;
-    border-radius: 3px;
-    padding: 15px 25px;
-
-    @include hover-focus {
-      background-color: $color-alice-blue;
-      color: $color-deep-sky-blue;
-    }
-
-    @include active {
-      color: $color-black-pearl;
-    }
+  .intro__title {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 20px;
   }
 
-  &__txt {
+  .intro__text {
+    margin-bottom: 50px;
+  }
+
+  .intro__button {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .intro {
+    padding: 80px 0 190px 0;
+  }
+
+  .intro__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .intro__text {
+    font-size: 14px;
+  }
+
+  .intro__button {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 30px;
+    margin-left: 0;
+  }
+
+  .intro__desc {
     display: none;
   }
 
-  @include vp-1023 {
-    padding: 80px 0 205px 0;
-    margin-top: -25px;
-
-    &__title {
-      font-size: 64px;
-      line-height: 75px;
-      margin-bottom: 20px;
-    }
-
-    &__text {
-      margin-bottom: 50px;
-    }
-
-    &__button {
-      margin-left: 45px;
-    }
-  }
-
-  @include vp-767 {
-    padding: 80px 0 190px 0;
-
-    &__title {
-      font-size: 36px;
-      line-height: 42px;
-    }
-
-    &__text {
-      font-size: 14px;
-    }
-
-    &__button {
-      font-size: 14px;
-      line-height: 16px;
-      padding: 10px 30px;
-      margin-left: 0;
-    }
-
-    &__desc {
-      display: none;
-    }
-
-    &__txt {
-      display: block;
-    }
+  .intro__txt {
+    display: block;
   }
 }

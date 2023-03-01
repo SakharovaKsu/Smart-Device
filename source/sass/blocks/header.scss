@@ -4,95 +4,99 @@
   width: 100%;
   background: $black-to-right;
   padding: 35px 0;
+}
 
-  &__nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  padding-left: 0;
+}
+
+.header__link {
+  display: flex;
+  color: $color-alice-blue;
+
+  @include hover-focus {
+    color: $color-deep-sky-blue;
   }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 120px;
-    padding-left: 0;
+  @include active {
+    color: $color-deep-sky-blue;
+  }
+}
+
+.header__icon {
+  margin-right: 15px;
+}
+
+.header__button {
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-alice-blue;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid $color-alice-blue;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  @include hover-focus {
+    color: $color-black-pearl;
+    background-color: $color-alice-blue;
   }
 
-  &__link {
-    display: flex;
-    color: $color-alice-blue;
-
-    @include hover-focus {
-      color: $color-deep-sky-blue;
-    }
-
-    @include active {
-      color: $color-deep-sky-blue;
-    }
+  @include active {
+    color: $color-black-pearl;
+    border: 1px solid $color-deep-sky-blue;
+    background-color: $color-deep-sky-blue;
   }
+}
 
-  &__icon {
-    margin-right: 15px;
-  }
-
-  &__button {
-    font-family: $ff-roboto-condensed;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: $color-alice-blue;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border: 1px solid $color-alice-blue;
-    border-radius: 3px;
-    background-color: transparent;
-    padding: 10px 15px;
-    cursor: pointer;
-
-    @include hover-focus {
-      color: $color-black-pearl;
-      background-color: $color-alice-blue;
-    }
-
-    @include active {
-      color: $color-black-pearl;
-      border: 1px solid $color-deep-sky-blue;
-      background-color: $color-deep-sky-blue;
-    }
-  }
-
-  @include vp-1023 {
+@media (max-width: ($vp-1024 - 1px)) {
+  .header {
     position: relative;
     padding: 20px 20px 25px 0;
-
-    &__nav {
-      justify-content: space-between;
-    }
-
-    &__list {
-      gap: 20px;
-    }
-
-    &__link {
-      padding: 10px;
-    }
-
-    &__icon {
-      margin: 0;
-    }
-
-    &__text {
-      display: none;
-    }
-
-    &__button {
-      display: none;
-    }
   }
 
-  @include vp-767 {
+  .header__nav {
+    justify-content: space-between;
+  }
+
+  .header__list {
+    gap: 20px;
+  }
+
+  .header__link {
+    padding: 10px;
+  }
+
+  .header__icon {
+    margin: 0;
+  }
+
+  .header__text {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .header {
     padding: 10px 20px 20px 10px;
   }
 }

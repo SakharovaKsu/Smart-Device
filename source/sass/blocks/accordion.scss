@@ -1,39 +1,37 @@
-.accordion {
-  @include vp-767 {
-    &__control {
-      position: relative;
+@media (max-width: ($vp-768 - 1px)) {
+  .accordion__control {
+    position: relative;
 
-      &::before {
-        position: absolute;
-        content: "";
-        width: 15px;
-        height: 1px;
-        top: 27px;
-        right: 16px;
-        background-color: $color-silver;
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        width: 1px;
-        height: 15px;
-        top: 20px;
-        right: 23px;
-        background-color: $color-silver;
-      }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 1px;
+      top: 27px;
+      right: 16px;
+      background-color: $color-silver;
     }
 
-    &__content {
-      display: none;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 15px;
+      top: 20px;
+      right: 23px;
+      background-color: $color-silver;
     }
-  
-    &__content--open .accordion__content {
-      display: block;
-    }
+  }
 
-    &__content--open .accordion__control::after {
-      transform: rotate(90deg);
-    }
+  .accordion__content {
+    display: none;
+  }
+
+  .accordion__content--open .accordion__content {
+    display: block;
+  }
+
+  .accordion__content--open .accordion__control::after {
+    transform: rotate(90deg);
   }
 }
