@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  initAccordion();
   // Modules
   // ---------------------------------
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

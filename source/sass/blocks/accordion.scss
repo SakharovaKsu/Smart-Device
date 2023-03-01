@@ -1,11 +1,39 @@
 .accordion {
   @include vp-767 {
+    &__control {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 1px;
+        top: 27px;
+        right: 16px;
+        background-color: $color-silver;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 15px;
+        top: 20px;
+        right: 23px;
+        background-color: $color-silver;
+      }
+    }
+
     &__content {
       display: none;
     }
   
     &__open .accordion__content {
       display: block;
+    }
+
+    &__open .accordion__control::after {
+      transform: rotate(90deg);
     }
   }
 }
