@@ -1,9 +1,11 @@
 .accordion {
-  &__content {
-    display: none;
-  }
-
-  &__open .accordion__content {
-    display: block;
+  @include vp-767 {
+    &__content {
+      display: none;
+    }
+  
+    &__open .accordion__content {
+      display: block;
+    }
   }
 }

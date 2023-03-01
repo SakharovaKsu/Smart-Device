@@ -1,16 +1,16 @@
-export default accordionElement = () => {
-  const accordions = document.querySelectorAll('.accordeon');
+const initAccordion = () => {
+  const accordions = document.querySelectorAll('.accordion');
 
 	accordions.forEach(el => {
 		el.addEventListener('click', (e) => {
 			const self = e.currentTarget;
-      const content = document.querySelector('.accordeon__content');
+      const content = document.querySelector('.accordion__content');
 			const control = document.querySelector('.accordion__control');
 
-			self.classList.toggle('accordeon__open');
+			self.classList.toggle('accordion__open');
 
 			// если открыт аккордеон
-			if (self.classList.contains('accordeon__open')) {
+			if (self.classList.contains('accordion__open')) {
 				control.setAttribute('aria-expanded', true);
 				content.setAttribute('aria-hidden', false);
 				content.style.maxHeight = content.scrollHeight + 'px';
@@ -22,3 +22,5 @@ export default accordionElement = () => {
 		});
 	});
 }
+
+export default { initAccordion };
