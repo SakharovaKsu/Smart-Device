@@ -19,8 +19,6 @@
     background-repeat: no-repeat;
     background-size: 150px 320px;
   }
-
-  // @include graphic-retina("../img/2022@2x", "png");
 }
 
 .information__title {
@@ -36,6 +34,10 @@
   margin: 0;
   margin-bottom: 30px;
   max-width: 970px;
+}
+
+.information__text--more {
+  display: none;
 }
 
 .information__button {
