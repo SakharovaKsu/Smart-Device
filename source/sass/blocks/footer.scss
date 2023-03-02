@@ -13,9 +13,12 @@
 }
 
 .footer__list--nav {
-  display: grid;
-  grid-template-columns: 220px 220px;
-  column-gap: 30px;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+.footer__item {
+  break-inside: avoid-column;
 }
 
 .footer__title {
@@ -68,8 +71,7 @@
   }
 
   .footer__list--nav {
-    display: flex;
-    flex-direction: column;
+    column-count: 1;
   }
 
   .footer__contact {
@@ -105,27 +107,7 @@
 
   .footer__title {
     margin: 0;
-    padding: 20px 16px;
-  }
-
-  .footer__title::after {
-    position: absolute;
-    content: "";
-    width: 15px;
-    height: 1px;
-    top: 28px;
-    right: 16px;
-    background-color: $color-silver;
-  }
-
-  .footer__title--disabled::before {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 15px;
-    top: 20px;
-    right: 23px;
-    background-color: $color-silver;
+    padding: 20px 0;
   }
 
   .footer__list {

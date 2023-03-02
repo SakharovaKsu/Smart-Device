@@ -4,16 +4,12 @@
   padding-bottom: 280px;
   padding-left: 125px;
   background-color: $color-black-pearl;
-  background-image: url("../../img/background-image.jpg");
+  @include graphic-retina("../../img/background-image", "jpg");
   background-size: no-repeat;
   background-position: center;
   width: 100%;
   height: auto;
   background-size: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/background-image@2x.jpg");
-  }
 }
 
 .intro__title {

@@ -4,6 +4,32 @@
   }
 }
 
+@mixin media-retina {
+	@media (min-resolution: 2dppx) {
+		@content;
+	}
+}
+
+@mixin graphic-webp($filename, $extname: "jpg") {
+	$webp: url("../images/#{$filename}.webp");
+
+	@supports (background-image: $webp) {
+		background-image: $webp;
+	}
+
+	@supports not (background-image: $webp) {
+		background-image: url("../images/#{$filename}.#{$extname}");
+	}
+}
+
+@mixin graphic-retina($filename, $extname: "jpg") {
+	@include graphic-webp($filename, $extname);
+
+	@include media-retina {
+		@include graphic-webp("#{$filename}@2x", $extname);
+	}
+}
+
 @mixin hover {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
