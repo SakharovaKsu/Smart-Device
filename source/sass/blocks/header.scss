@@ -29,11 +29,21 @@
   }
 
   @include active {
-    color: $color-deep-sky-blue;
+    color: $color-silver;
+  }
+
+  &:hover .header__icon,
+  &:focus .header__icon {
+    fill: $color-alice-blue;
+  }
+
+  &:active .header__icon {
+    fill: $color-silver;
   }
 }
 
 .header__icon {
+  fill: $color-deep-sky-blue;
   margin-right: 15px;
 }
 
