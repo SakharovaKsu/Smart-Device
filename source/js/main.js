@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordion} from './modules/accordion';
 import { readMore } from './modules/read-more';
+import { scrollPage } from './modules/scroll-page';
 
 // ---------------------------------
 
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   initAccordion();
   readMore();
+  scrollPage();
   // Modules
   // ---------------------------------
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

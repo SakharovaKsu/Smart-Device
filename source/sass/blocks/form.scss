@@ -1,21 +1,25 @@
 .form {
-  position: relative;
   padding-top: 170px;
   padding-bottom: 250px;
-  background-color: $color-deep-sky-blue;
-  @include graphic-retina("../img/background-form", "jpg");
   background-size: cover;
+  background: linear-gradient(319deg, $color-deep-sky-blue 64%, $color-cerulean 64%);
+}
 
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   width: 510px;
-  //   height: 285px;
-  //   top: 50%;
-  //   left: 100px;
-  //   @include graphic-retina("../img/paper-airplane", "png");
-  //   background-size: 100%;
-  // }
+.form__box {
+  position: relative;
+  max-width: 580px;
+  margin-left: auto;
+
+    &::before {
+    position: absolute;
+    content: "";
+    width: 510px;
+    height: 285px;
+    top: 77px;
+    left: -630px;
+    @include graphic-retina("../img/paper-airplane", "png");
+    background-size: 100%;
+  }
 }
 
 .form__title {
@@ -40,17 +44,52 @@
   align-items: center;
 }
 
-.form__input {
-  width: 275px;
+.form__label {
+  display: inline-block;
+  flex: 1 1;
 }
 
 .form__input,
 .form__field {
-  color: $color-default-white;
   padding: 15px 0 15px 15px;
-  background: rgba(4, 20, 39, 0.15);
+  background: $color-pattens-blue;
   border: none;
   border-radius: 3px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    outline: 1px solid $color-black-pearl;
+  }
+
+  &:active::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.form__field {
+  width: 100%;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    outline: 1px solid $color-black-pearl;
+  }
+
+  &:active::placeholder {
+    color: $color-default-white;
+  }
 }
 
 .form__button {
@@ -67,6 +106,18 @@
   border: none;
   border-radius: 3px;
   flex-shrink: 0;
+
+  @include hover-focus {
+    background: $color-alice-blue;
+    outline: 2px solid $color-black-pearl;
+    color: $color-black-pearl;
+  }
+
+  @include active {
+    background: $color-alice-blue;
+    outline: 2px solid $color-black-pearl;
+    color: $color-black-pearl;
+  }
 }
 
 .form__checkbox {
@@ -95,7 +146,6 @@
   background-image: url("../../img/svg/check-mark.svg");
 }
 
-
 .form-label {
   position: relative;
   display: inline-block;
@@ -103,4 +153,70 @@
   line-height: 16px;
   color: $color-default-white;
   opacity: 0.8;
+}
+
+.form__field {
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .form {
+    padding-top: 50px;
+    padding-bottom: 125px;
+    // background-image: none;
+  }
+
+  .form__box {
+    max-width: 100%;
+    margin: 0;
+
+    &::before {
+      content: none;  
+    }
+  }
+
+  .form__button {
+    margin-right: 55px;
+  }
+
+  .form-label {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .form__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140.62%;
+    margin-bottom: 20px;
+  }
+
+  .form__text {
+    font-size: 14px;
+    line-height: 134.4%;
+    max-width: 200px;
+    margin-bottom: 40px;
+  }
+
+  .form__inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form__label {
+    width: 100%;
+  }
+
+  .form__comment {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .form__button {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
 }

@@ -40,6 +40,10 @@
   display: none;
 }
 
+.information__hide {
+  display: block;
+}
+
 .information__button {
   font-weight: 700;
   font-size: 14px;
@@ -86,6 +90,10 @@
   .information__button {
     margin-top: 0;
   }
+
+  .information__hide {
+    display: block;
+  }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
@@ -109,5 +117,9 @@
     font-size: 14px;
     line-height: 134.4%;
     width: 100%;
+  }
+
+  .information__hide {
+    display: none;
   }
 }

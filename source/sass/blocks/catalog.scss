@@ -1,3 +1,5 @@
+@media (max-width: ($vp-1920)) {
+
 .catalog {
   padding-top: 70px;
   padding-bottom: 140px;
@@ -91,6 +93,7 @@
   color: $color-default-white;
   max-width: 230px;
 }
+}
 
 @media (max-width: ($vp-1024 - 1px)) {
   .catalog {
@@ -139,5 +142,22 @@
 
   .catalog__desc-mobile {
     display: block;
+  }
+
+  .catalog__item {
+    &--one-pic {
+      @include graphic-retina("../img/catalog-one-pic-mobile", "jpg");
+      background-size: cover;
+    }
+  
+    &--two-pic {
+      @include graphic-retina("../img/catalog-two-pic-mobile", "jpg");
+      background-size: cover;
+    }
+  
+    &--three-pic {
+      @include graphic-retina("../img/catalog-three-pic-mobile", "jpg");
+      background-size: cover;
+    }
   }
 }
