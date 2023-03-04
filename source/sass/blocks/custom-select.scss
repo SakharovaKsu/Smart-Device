@@ -73,22 +73,22 @@
     }
 
     .custom-select__button {
-      border: 2px solid #ff1553;
+      border: 2px solid $color-torch-red;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        border: 2px solid $color-wild-watermelon;
       }
     }
   }
 
   &.is-valid {
     .custom-select__button {
-      border: 2px solid $color-eucalyptus;
+      border: 2px solid $color-green;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba($color-eucalyptus, 0.5);
+        border: 2px solid $color-la-palma;
       }
     }
   }
@@ -126,11 +126,11 @@
     bottom: -5px;
 
     &.is-invalid {
-      color: #ff0000;
+      color: $color-torch-red;
     }
 
     &.is-valid {
-      color: #15ab07;
+      color: $color-green;
     }
   }
 }
@@ -198,8 +198,8 @@
   padding: 0;
   overflow-y: auto;
   list-style: none;
-  background-color: #ffffff;
-  border: 2px solid #000000;
+  background-color: $color-default-white;
+  border: 2px solid $color-default-white;
   transform: translateY(100%);
   visibility: hidden;
   opacity: 0;
@@ -213,27 +213,27 @@
   transition: background-color 0.3s ease;
 
   &[aria-selected="true"] {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $color-alice-blue-ligth;
 
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: $color-alice-blue-ligth;
       }
     }
 
     &.focus-visible:focus {
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: $color-alice-blue-ligth;
     }
   }
 
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: $color-alice-blue-ligth;
     }
   }
 
   &.focus-visible:focus {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: $color-alice-blue-ligth;
   }
 }
 
@@ -241,7 +241,7 @@
   position: absolute;
   bottom: -15px;
   left: 0;
-  color: #ff1553;
+  color: $color-torch-red;
   opacity: 0;
   transition: opacity 0.1s ease;
 }
@@ -268,7 +268,7 @@
   width: 20px;
   height: 10px;
   margin-left: auto;
-  background-color: #000000;
+  background-color: $color-default-black;
   transition: transform 0.3s ease;
   clip-path: polygon(100% 0, 100% 20%, 50% 100%, 0 20%, 0 0, 50% 80%);
 }

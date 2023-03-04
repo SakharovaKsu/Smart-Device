@@ -10,6 +10,7 @@
   width: 100%;
   height: auto;
   background-size: cover;
+  color: $color-alice-blue;
 }
 
 .intro h2 {
@@ -19,7 +20,6 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: $color-alice-blue;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -27,7 +27,6 @@
 .intro p {
   font-size: 22px;
   line-height: 155%;
-  color: $color-alice-blue;
   margin: 0;
   margin-bottom: 40px;
   max-width: 685px;

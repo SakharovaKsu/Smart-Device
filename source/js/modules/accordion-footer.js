@@ -6,10 +6,10 @@ export const initAccordionFooter = () => {
       const self = e.target.closest('.accordion');
 
       accordions.forEach((el) => {
-        if (el === self && !self.classList.contains('accordion__content--open')) {
-          el.classList.add('accordion__content--open');
+        if (el === self && !self.classList.contains('accordion--open')) {
+          el.classList.add('accordion--open');
         } else {
-          el.classList.remove('accordion__content--open');
+          el.classList.remove('accordion--open');
         }
       });
     });
