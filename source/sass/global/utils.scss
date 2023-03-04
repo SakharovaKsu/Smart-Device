@@ -36,3 +36,14 @@
 .js-focus-visible:focus:not(.focus-visible) {
   outline: none;
 }
+
+.mobile-hidden {
+  display: inline;
+}
+.information__box:not(.is-active) {
+  .mobile-hidden {
+    @include vp-767 {
+      display: none;
+    }
+  }
+}

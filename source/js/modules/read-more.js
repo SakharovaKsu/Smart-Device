@@ -2,7 +2,6 @@ export const readMore = () => {
 
   const aboutParent = document.querySelector('[data-accordion="parent"]');
   const accordionElement = aboutParent.querySelector('[data-accordion="element"]');
-  const accordionElementMobile = aboutParent.querySelector('[data-accordion="element-mobile"]');
   const accordionButton = aboutParent.querySelector('[data-accordion="button"]');
   
   const accordionButtonToggler = () => {
@@ -14,7 +13,7 @@ export const readMore = () => {
   };
   
   const executeAboutButton = () => {
-    if (aboutParent && accordionButton && accordionElement && accordionElementMobile) {
+    if (aboutParent && accordionButton && accordionElement) {
       accordionButton.addEventListener('click', accordionButtonToggler);
     }
   };
