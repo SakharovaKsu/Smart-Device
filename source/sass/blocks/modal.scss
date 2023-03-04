@@ -30,8 +30,7 @@
   }
 
   &__wrapper {
-    position: relative;
-
+    // position: relative;
     display: flex;
     flex-shrink: 0;
     justify-content: center;
@@ -59,7 +58,7 @@
   &__content {
     position: relative;
 
-    width: 600px;
+    width: 500px;
     padding: 40px;
 
     background-color: $color-default-white;
@@ -75,12 +74,10 @@
     top: 22px;
     right: 22px;
     z-index: 1;
-
     width: 40px;
     height: 40px;
     padding: 0;
-
-    background: $color-transparent;
+    background: transparent;
     border: none;
     cursor: pointer;
   }
@@ -115,5 +112,17 @@
     opacity: 1;
 
     pointer-events: auto;
+  }
+}
+
+.madal__icon {
+  fill: $color-default-white;
+
+  @include hover-focus {
+    fill: $color-black-pearl;
+  }
+
+  @include active {
+    fill: $color-alice-blue;
   }
 }

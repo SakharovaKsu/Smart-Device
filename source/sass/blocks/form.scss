@@ -3,10 +3,16 @@
   padding-bottom: 250px;
   background-size: cover;
   background: linear-gradient(319deg, $color-deep-sky-blue 64%, $color-cerulean 64%);
+
+  &--modal {
+    position: relative;
+    max-width: 500px;
+    background: $color-deep-sky-blue;
+    padding: 40px;
+  }
 }
 
 .form__box {
-  position: relative;
   max-width: 580px;
   margin-left: auto;
 
@@ -22,7 +28,7 @@
   }
 }
 
-.form__title {
+.form h2 {
   font-family: $ff-roboto-condensed;
   font-weight: 400;
   font-size: 36px;
@@ -32,7 +38,7 @@
   margin-bottom: 15px;
 }
 
-.form__text {
+.form p {
   color: $color-default-white;
   margin: 0;
   margin-bottom: 35px;
@@ -42,22 +48,31 @@
   display: flex;
   gap: 30px;
   align-items: center;
+  margin-top: 35px;
+
+  &--modal {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 25px;
+  }
 }
 
-.form__label {
+.form__field {
   display: inline-block;
   flex: 1 1;
+  width: 100%;
 }
 
-.form__input,
-.form__field {
+.form__field input,
+.form__comment textarea {
   padding: 15px 0 15px 15px;
   background: $color-pattens-blue;
   border: none;
   border-radius: 3px;
 }
 
-.form__input {
+.form__field input {
   display: block;
   width: 100%;
 
@@ -75,8 +90,14 @@
   }
 }
 
-.form__field {
+.form__comment {
+  margin-top: 20px;
+}
+
+.form__comment textarea {
   width: 100%;
+  padding-top: 25px;
+  padding-left: 15px;
 
   &::placeholder {
     color: $color-default-white;
@@ -136,7 +157,7 @@
   border-radius: 2px;
 }
 
-.form__input[type=checkbox]:checked+.form__checkbox-visible::after {
+input[type=checkbox]:checked + .form__checkbox-visible::after {
   position: absolute;
   content: "";
   width: 7px;
@@ -146,7 +167,15 @@
   background-image: url("../../img/svg/check-mark.svg");
 }
 
-.form-label {
+.form__checkbox-visible--modal::before {
+  top: 4px;
+}
+
+input[type=checkbox]:checked + .form__checkbox-visible--modal::after {
+  top: 7px;
+}
+
+.form__checkbox label {
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -155,16 +184,11 @@
   opacity: 0.8;
 }
 
-.form__field {
-  padding-top: 25px;
-  padding-left: 15px;
-}
-
 @media (max-width: ($vp-1024 - 1px)) {
   .form {
+    background: $color-deep-sky-blue;
     padding-top: 50px;
     padding-bottom: 125px;
-    // background-image: none;
   }
 
   .form__box {
@@ -180,20 +204,20 @@
     margin-right: 55px;
   }
 
-  .form-label {
+  .form__field label {
     max-width: 200px;
   }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
-  .form__title {
+  .form h2 {
     font-weight: 400;
     font-size: 30px;
     line-height: 140.62%;
     margin-bottom: 20px;
   }
 
-  .form__text {
+  .form p {
     font-size: 14px;
     line-height: 134.4%;
     max-width: 200px;
@@ -203,9 +227,10 @@
   .form__inner {
     flex-direction: column;
     gap: 20px;
+    margin-top: 30px;
   }
 
-  .form__label {
+  .form__field label {
     width: 100%;
   }
 
@@ -218,5 +243,6 @@
   .form__button {
     margin-right: 0;
     margin-bottom: 5px;
+    width: 100%;
   }
 }

@@ -21,7 +21,7 @@
   }
 }
 
-.information__title {
+.information h2 {
   font-family: $ff-roboto-condensed;
   font-weight: 400;
   font-size: 36px;
@@ -30,18 +30,18 @@
   margin-bottom: 0;
 }
 
-.information__text {
+.information p {
   margin: 0;
   margin-bottom: 30px;
   max-width: 970px;
 }
 
-.information__text--more {
+.information__text-more {
   display: none;
 }
 
 .information__hide {
-  display: block;
+  display: inline;
 }
 
 .information__button {
@@ -78,7 +78,7 @@
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
-  .information__text {
+  .information p {
     max-width: 500px;
   }
 
@@ -89,10 +89,6 @@
 
   .information__button {
     margin-top: 0;
-  }
-
-  .information__hide {
-    display: block;
   }
 }
 
@@ -108,12 +104,12 @@
     }
   }
 
-  .information__title {
+  .information h2 {
     font-size: 28px;
     line-height: 140.62%;
   }
 
-  .information__text {
+  .information p {
     font-size: 14px;
     line-height: 134.4%;
     width: 100%;

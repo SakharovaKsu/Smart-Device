@@ -12,8 +12,8 @@
   background-size: cover;
 }
 
-.intro__title {
-  font-size: $ff-roboto-condensed;
+.intro h2 {
+  font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -24,7 +24,7 @@
   margin-bottom: 40px;
 }
 
-.intro__text {
+.intro p {
   font-size: 22px;
   line-height: 155%;
   color: $color-alice-blue;
@@ -34,6 +34,7 @@
 }
 
 .intro__button {
+  display: inline-block;
   font-size: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 18px;
@@ -67,13 +68,13 @@
     margin-top: -25px;
   }
 
-  .intro__title {
+  .intro h2 {
     font-size: 64px;
     line-height: 75px;
     margin-bottom: 20px;
   }
 
-  .intro__text {
+  .intro p {
     margin-bottom: 50px;
   }
 
@@ -87,12 +88,12 @@
     padding: 80px 0 190px 0;
   }
 
-  .intro__title {
+  .intro h2 {
     font-size: 36px;
     line-height: 42px;
   }
 
-  .intro__text {
+  .intro p {
     font-size: 14px;
   }
 
@@ -101,6 +102,7 @@
     line-height: 16px;
     padding: 10px 30px;
     margin-left: 0;
+    width: 100%;
   }
 
   .intro__desc {

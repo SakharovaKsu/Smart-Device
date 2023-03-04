@@ -21,7 +21,7 @@
   break-inside: avoid-column;
 }
 
-.footer__title {
+.footer h2 {
   color: $color-default-white;
   font-family: $ff-roboto-condensed;
   font-size: 15px;
@@ -33,7 +33,7 @@
 }
 
 .footer__link,
-.footer__text {
+.footer p {
   display: block;
   line-height: 135%;
   color: $color--white-transparency;
@@ -105,7 +105,7 @@
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
-  .footer__title {
+  .footer h2 {
     margin: 0;
     padding: 20px 0;
   }

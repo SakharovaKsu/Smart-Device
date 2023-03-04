@@ -1,9 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initAccordion} from './modules/accordion';
-import { readMore } from './modules/read-more';
-import { scrollPage } from './modules/scroll-page';
+import {initAccordionFooter} from './modules/accordion-footer';
+import {readMore} from './modules/read-more';
+import {scrollPage} from './modules/scroll-page';
+import {initAccordions} from './modules/accordion/init-accordion';
 
 // ---------------------------------
 
@@ -12,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  initAccordion();
+  initAccordionFooter();
   readMore();
   scrollPage();
   // Modules
@@ -24,7 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initAccordions();
   });
+
 });
 
 // ---------------------------------
