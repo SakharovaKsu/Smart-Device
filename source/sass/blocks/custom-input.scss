@@ -1,7 +1,6 @@
 .custom-input,
 .custom-textarea {
   position: relative;
-
   display: flex;
 
   @media screen and (max-width: 767px) {
@@ -26,23 +25,13 @@
       min-height: 48px;
       margin-left: auto;
       padding: 10px;
-
       border-radius: 5px;
       outline: none;
-
       transition: border 0.3s ease;
 
       @media screen and (max-width: 767px) {
         max-width: unset;
         width: 100%;
-      }
-
-      &:hover {
-        outline: 2px solid rgba(#000000, 0.5);
-      }
-
-      &:focus {
-        outline: 2px solid rgba(#000000, 0.8);
       }
     }
   }
@@ -57,11 +46,8 @@
     position: absolute;
     right: 0;
     bottom: 35px;
-
     color: #ff1553;
-
     opacity: 0;
-
     transition: opacity 0.3s ease;
 
     @media screen and (max-width: 767px) {

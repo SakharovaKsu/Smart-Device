@@ -1,9 +1,3 @@
-@mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    @content;
-  }
-}
-
 @mixin media-retina {
 	@media (min-resolution: 2dppx) {
 		@content;
