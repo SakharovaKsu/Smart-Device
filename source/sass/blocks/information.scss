@@ -1,23 +1,24 @@
 .information {
-  padding-bottom: 100px;
-  max-width: 1220px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 113px;
 }
 
 .information__box {
   position: relative;
-  margin-left: 230px;
-  padding-left: 185px;
+  margin-left: 335px;
+  padding-left: 235px;
 
   &::after {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
-    width: 150px;
-    height: 320px;
+    width: 140px;
+    height: 306px;
     @include graphic-retina("../img/2022", "png");
     background-repeat: no-repeat;
-    background-size: 150px 320px;
+    background-size: 140px 306px;
   }
 }
 
@@ -27,12 +28,13 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 
 .information p {
+  line-height: 22px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   max-width: 970px;
 }
 
@@ -51,8 +53,8 @@
   border: 1px solid $color-deep-sky-blue;
   border-radius: 3px;
   background: transparent;
-  padding: 14px 50px;
-  margin-top: 15px;
+  padding: 13px 43px;
+  margin-top: 14px;
 
   @include hover-focus {
     border: 1px solid $color-black-pearl;
@@ -66,6 +68,32 @@
   }
 }
 
+@media (max-width: ($vp-1920 - 1px)) {
+  .information {
+    padding-bottom: 121px;
+  }
+
+  .information__box {
+    margin-left: 19px;
+
+    &::after {
+      left: -13px;
+      width: 145px;
+      height: 318px;
+      background-size: 145px 318px;
+    }
+  }
+
+  .information p {
+    margin-bottom: 21px;
+  }
+
+  .information__button {
+    margin-top: 18px;
+    padding: 13px 48px;
+  }
+}
+
 @media (max-width: ($vp-1440 - 1px)) {
   .information__box {
     margin-left: 0;
@@ -74,6 +102,10 @@
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
+  .information {
+    padding-bottom: 79px;
+  }
+
   .information p {
     max-width: 500px;
   }
@@ -81,6 +113,19 @@
   .information__box {
     margin-left: 30px;
     padding-left: 180px;
+
+    &::after {
+      left: 6px;
+      top: 5px;
+    }
+  }
+
+  .information h2 {
+    margin-bottom: 10px;
+  }
+
+  .information p {
+    margin-bottom: 19px;
   }
 
   .information__button {
@@ -109,5 +154,9 @@
     font-size: 14px;
     line-height: 134.4%;
     width: 100%;
+  }
+
+  .information__button {
+    padding: 8px 38px;
   }
 }

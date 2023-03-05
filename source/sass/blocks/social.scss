@@ -1,9 +1,10 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 22px;
   padding-left: 0;
-  margin-top: 30px;
+  margin-top: 32px;
+  margin-left: 15px;
 }
 
 .social__icon {
@@ -18,8 +19,24 @@
   }
 }
 
+@media (max-width: ($vp-1920 - 1px)) {
+  .social__list {
+    gap: 25px;
+    padding-left: 0;
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .social__list {
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: ($vp-768 - 1px)) {
   .social__list {
-    margin-bottom: 25px;
+    margin-left: 0;
+    margin-bottom: 22px;
+    margin-top: 19px;
   }
 }

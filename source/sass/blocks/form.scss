@@ -1,9 +1,9 @@
 @media (max-width: ($vp-1920)) {
   .form {
-    padding-top: 170px;
-    padding-bottom: 250px;
+    padding-top: 156px;
+    padding-bottom: 238px;
     background-size: cover;
-    background: linear-gradient(319deg, $color-deep-sky-blue 64%, $color-cerulean 64%);
+    background: linear-gradient(319deg, $color-deep-sky-blue 69.5%, $color-cerulean 69.5%);
 
     &--modal {
       position: relative;
@@ -15,17 +15,18 @@
 
   .form__box {
     position: relative;
-    max-width: 580px;
+    max-width: 585px;
     margin-left: auto;
+    padding-left: 34px;
     color: $color-default-white;
 
       &::before {
       position: absolute;
       content: "";
-      width: 510px;
-      height: 285px;
+      width: 482px;
+      height: 270px;
       top: 77px;
-      left: -630px;
+      left: -562px;
       @include graphic-retina("../img/paper-airplane", "png");
       background-size: 100%;
     }
@@ -37,19 +38,19 @@
     font-size: 36px;
     line-height: 51px;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 
   .form p {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: -4px;
   }
 
   .form__inner {
     display: flex;
     gap: 30px;
-    align-items: center;
-    margin-top: 35px;
+    align-items: flex-end;
+    margin-top: 34px;
 
     &--modal {
       flex-direction: column;
@@ -97,8 +98,8 @@
 
   .form__comment textarea {
     width: 100%;
-    padding-top: 25px;
-    padding-left: 15px;
+    padding-top: 22px;
+    padding-left: 14px;
 
     &::placeholder {
       color: $color-default-white;
@@ -123,7 +124,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $color-default-white;
-    padding: 15px 70px;
+    padding: 11px 63px;
     background: $color-black-pearl;
     border: none;
     border-radius: 3px;
@@ -144,7 +145,8 @@
 
   .form__checkbox {
     position: relative;
-    padding-left: 24px;
+    padding-left: 43px;
+    margin-bottom: -7px;
   }
 
   .form__checkbox label {
@@ -159,22 +161,21 @@
   .form__checkbox-visible::before {
     position: absolute;
     content: "";
-    left: 0;
-    top: 8px;
+    left: 17px;
+    top: 7px;
     width: 15px;
     height: 15px;
     border: 1px solid $color-default-white;
     border-radius: 2px;
   }
 
-
   .form__checkbox input[type=checkbox]:checked + .form__checkbox-visible::after {
     position: absolute;
     content: "";
     width: 7px;
     height: 7px;
-    top: 12px;
-    left: 3px;
+    top: 11px;
+    left: 20px;
     background-image: url("../../img/svg/check-mark.svg");
   }
 
@@ -203,65 +204,141 @@
   }
 }
 
+@media (max-width: ($vp-1920 - 1px)) {
+  .form {
+    padding-top: 166px;
+    padding-bottom: 252px;
+  }
+
+  .form__box {
+    padding-left: 3px;
+
+    &::before {
+      height: 288px;
+      width: 514px;
+      top: 78px;
+      left: -629px;
+    }
+  }
+
+  .form h2 {
+    margin-bottom: 11px;
+  }
+
+  .form p {
+    margin-bottom: 0;
+  }
+
+  .form textarea {
+    height: 155px;
+    padding-top: 27px;
+    padding-left: 16px;
+  }
+
+  .form__button {
+    padding: 13px 71px;
+  }
+}
+
 @media (max-width: ($vp-1024 - 1px)) {
   .form {
     background: $color-deep-sky-blue;
-    padding-top: 50px;
+    padding-top: 44px;
     padding-bottom: 125px;
   }
 
   .form__box {
     max-width: 100%;
     margin: 0;
+    padding-left: 0;
 
     &::before {
       content: none;
     }
   }
 
-  .form__button {
-    margin-right: 55px;
+  .form h2 {
+    margin-bottom: 5px;
   }
 
-  .form__field label {
-    max-width: 200px;
+  .form__inner {
+    margin-top: 25px;
+  }
+
+  .form textarea {
+    padding-top: 34px;
+    padding-left: 14px;
+  }
+
+  .form__checkbox {
+    margin-bottom: 0;
+  }
+
+  .form__button {
+    margin-right: 34px;
+    margin-top: 13px;
   }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
+  .form {
+    padding-top: 47px;
+    padding-bottom: 83px;
+  }
+
   .form h2 {
     font-weight: 400;
     font-size: 30px;
     line-height: 140.62%;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 
   .form p {
     font-size: 14px;
     line-height: 134.4%;
     max-width: 200px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   .form__inner {
     flex-direction: column;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 18px;
   }
 
   .form__field label {
-    width: 100%;
+    max-width: 100%;
   }
 
   .form__comment {
     margin: 0;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 23px;
+  }
+
+  .form textarea {
+    padding-top: 24px;
+    height: 180px;
   }
 
   .form__button {
     margin-right: 0;
     margin-bottom: 5px;
     width: 100%;
+  }
+
+  .form__checkbox {
+    padding-left: 30px;
+  }
+
+  .form__checkbox-visible {
+    &::before {
+      left: 4px;
+      top: 5px;
+    }
+  }
+
+  .form__checkbox input[type=checkbox]:checked+.form__checkbox-visible::after {
+    left: 7px;
+    top: 9px;
   }
 }

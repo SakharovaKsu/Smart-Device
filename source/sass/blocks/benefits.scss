@@ -1,19 +1,25 @@
 .benefits {
-  padding: 120px 0;
+  padding-top: 114px;
+  padding-bottom: 96px;
+}
+
+.benefits h2 {
+  margin: 0;
 }
 
 .benefits__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 564px 564px;
   gap: 30px;
   justify-content: center;
   padding-left: 0;
+  margin-top: 0;
 }
 
 .benefits__item {
   list-style-type: none;
-  padding: 40px 125px 75px 40px;
-  min-height: 300px;
+  padding: 36px 18px 65px 37px;
+  min-height: 284px;
   border: 1px solid $color-whisper;
   border-left: 5px solid $color-deep-sky-blue;
 
@@ -33,25 +39,52 @@
 
 .benefits__icon {
   fill: $color-deep-sky-blue;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .benefits h3 {
   font-size: $ff-roboto-condensed;
   font-size: 24px;
   line-height: 34px;
+  letter-spacing: -0.1em;
   color: $color-deep-sky-blue;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 
 .benefits p {
   margin: 0;
+  line-height: 135%;
+}
+
+@media (max-width: ($vp-1920 - 1px)) {
+  .benefits {
+    padding-top: 116px;
+    padding-bottom: 106px;
+  }
+
+  .benefits__list {
+    grid-template-columns: 595px 595px;
+  }
+
+  .benefits__item {
+    padding: 39px 22px 70px 40px;
+    min-height: 300px;
+  }
+
+  .benefits__icon {
+    margin-bottom: 14px;
+  }
+
+  .benefits h3 {
+    margin-bottom: 13px;
+  }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
   .benefits {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 59px;
   }
 
   .benefits__list {
@@ -59,14 +92,23 @@
   }
 
   .benefits__item {
-    padding: 40px 30px 35px 45px;
+    padding: 37px 30px 31px 39px;
     min-height: 360px;
+  }
+
+  .benefits__icon {
+    margin-bottom: 10px;
+  }
+
+  .benefits h3 {
+    margin-bottom: 9px;
   }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
   .benefits {
-    padding: 80px 0;
+    padding-top: 49px;
+    padding-bottom: 31px;
   }
 
   .benefits__list {
@@ -74,8 +116,16 @@
   }
 
   .benefits__item {
-    padding: 30px 30px 35px 30px;
-    min-height: 360px;
+    padding: 27px 23px 35px;
+    min-height: 340px;
+  }
+
+  .benefits__item--height {
+    min-height: 325px;
+  }
+
+  .benefits__icon {
+    margin-bottom: 6px;
   }
 
   .benefits h3 {
