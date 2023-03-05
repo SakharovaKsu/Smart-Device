@@ -1,5 +1,4 @@
 const setLimitationError = (limitation) => {
-  // eslint-disable-next-line no-console
   console.error(`Переданный формат ограничения(data-limitation="${limitation}") - не поддерживается. Проверьте корректность введённых значений.`);
 };
 

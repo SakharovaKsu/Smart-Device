@@ -148,12 +148,12 @@
       @include graphic-retina("../img/catalog-one-pic-mobile", "jpg");
       background-size: cover;
     }
-  
+
     &--two-pic {
       @include graphic-retina("../img/catalog-two-pic-mobile", "jpg");
       background-size: cover;
     }
-  
+
     &--three-pic {
       @include graphic-retina("../img/catalog-three-pic-mobile", "jpg");
       background-size: cover;

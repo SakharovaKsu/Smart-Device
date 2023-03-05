@@ -1,13 +1,11 @@
 export const matrixReplace = (item, matrix, RegEx) => {
   if (!matrix) {
-    // eslint-disable-next-line no-console
     console.error('При валидации по матрице обязательно указывать формат матрицы: data-matrix=""');
     item.value = '';
     return;
   }
 
   if (!RegEx) {
-    // eslint-disable-next-line no-console
     console.error('При валидации по матрице обязательно указывать формат ограничений: data-matrix-limitations=""');
     item.value = '';
     return;

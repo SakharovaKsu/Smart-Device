@@ -4,7 +4,7 @@
     padding-bottom: 250px;
     background-size: cover;
     background: linear-gradient(319deg, $color-deep-sky-blue 64%, $color-cerulean 64%);
-  
+
     &--modal {
       position: relative;
       max-width: 500px;
@@ -12,13 +12,13 @@
       padding: 40px;
     }
   }
-  
+
   .form__box {
     position: relative;
     max-width: 580px;
     margin-left: auto;
     color: $color-default-white;
-  
+
       &::before {
       position: absolute;
       content: "";
@@ -30,7 +30,7 @@
       background-size: 100%;
     }
   }
-  
+
   .form h2 {
     font-family: $ff-roboto-condensed;
     font-weight: 400;
@@ -39,18 +39,18 @@
     margin: 0;
     margin-bottom: 15px;
   }
-  
+
   .form p {
     margin: 0;
     margin-bottom: 35px;
   }
-  
+
   .form__inner {
     display: flex;
     gap: 30px;
     align-items: center;
     margin-top: 35px;
-  
+
     &--modal {
       flex-direction: column;
       align-items: stretch;
@@ -58,13 +58,13 @@
       margin-top: 25px;
     }
   }
-  
+
   .form__field {
     display: inline-block;
     flex: 1 1;
     width: 100%;
   }
-  
+
   .form__field input,
   .form__comment textarea {
     padding: 15px 0 15px 15px;
@@ -72,48 +72,48 @@
     border: none;
     border-radius: 3px;
   }
-  
+
   .form__field input {
     display: block;
     width: 100%;
-  
+
     &::placeholder {
       color: $color-default-white;
     }
-  
+
     &:not(:disabled):hover,
     &:not(:disabled):focus {
       outline: 1px solid $color-black-pearl;
     }
-  
+
     &:active::placeholder {
       color: $color-default-white;
     }
   }
-  
+
   .form__comment {
     margin-top: 20px;
   }
-  
+
   .form__comment textarea {
     width: 100%;
     padding-top: 25px;
     padding-left: 15px;
-  
+
     &::placeholder {
       color: $color-default-white;
     }
-  
+
     &:not(:disabled):hover,
     &:not(:disabled):focus {
       outline: 1px solid $color-black-pearl;
     }
-  
+
     &:active::placeholder {
       color: $color-default-white;
     }
   }
-  
+
   .form__button {
     font-family: $ff-roboto-condensed;
     font-weight: 700;
@@ -128,13 +128,13 @@
     border: none;
     border-radius: 3px;
     flex-shrink: 0;
-  
+
     @include hover-focus {
       background: $color-alice-blue;
       outline: 2px solid $color-black-pearl;
       color: $color-black-pearl;
     }
-  
+
     @include active {
       background: $color-alice-blue;
       outline: 2px solid $color-black-pearl;
@@ -167,7 +167,7 @@
     border-radius: 2px;
   }
 
-  
+
   .form__checkbox input[type=checkbox]:checked + .form__checkbox-visible::after {
     position: absolute;
     content: "";
@@ -183,11 +183,11 @@
       color: $color-black-pearl;
     }
   }
-  
+
   .form__checkbox-visible--modal::before {
     top: 4px;
   }
-  
+
   .form__checkbox input[type=checkbox]:checked + .form__checkbox-visible--modal::after {
     top: 7px;
   }
@@ -215,7 +215,7 @@
     margin: 0;
 
     &::before {
-      content: none;  
+      content: none;
     }
   }
 
