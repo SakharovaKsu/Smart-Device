@@ -1,6 +1,5 @@
 .information {
   display: flex;
-  justify-content: center;
   padding-bottom: 113px;
 }
 
@@ -55,6 +54,7 @@
   background: transparent;
   padding: 13px 43px;
   margin-top: 14px;
+  cursor: pointer;
 
   @include hover-focus {
     border: 1px solid $color-black-pearl;
@@ -71,6 +71,7 @@
 @media (max-width: ($vp-1920 - 1px)) {
   .information {
     padding-bottom: 121px;
+    justify-content: center;
   }
 
   .information__box {

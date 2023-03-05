@@ -3,14 +3,15 @@
   z-index: 100;
   width: 100%;
   background: $black-to-right;
-  padding: 23px 0;
+  padding: 25px 0;
 }
 
 .header__nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 160px;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__logo {
@@ -19,7 +20,6 @@
 
 .header__list {
   display: flex;
-  flex-wrap: wrap;
   gap: 108px;
   padding-left: 0;
 }
@@ -89,6 +89,7 @@
 
   .header__button {
     padding: 11px 16px;
+    margin-right: 61px;
   }
 }
 
@@ -105,6 +106,7 @@
 
   .header__list {
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   .header__link {

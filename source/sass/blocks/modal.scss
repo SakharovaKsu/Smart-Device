@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: -207px;
+  right: 16px;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -102,12 +102,18 @@
     width: 100%;
     padding: 20px;
   }
+
+  & h2 {
+    margin-bottom: 1px;
+    font-size: 30px;
+    line-height: 140.62%;
+  }
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 16px;
+  right: 14px;
   z-index: 1;
   width: 40px;
   height: 40px;

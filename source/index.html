@@ -20,7 +20,7 @@
           <nav class="header__nav">
             <a class="header__logo logo" href="index.html">
               <picture>
-                <source media="(max-width: 320px)" width="35" height="35" srcset="img/svg/logo-mobile.svg">
+                <source media="(max-width: 767px)" width="35" height="35" srcset="img/svg/logo-mobile.svg">
                 <img class="logo__picture" src="img/svg/logo.svg" width="215" height="55" alt="Иконка логотипа Smart Device.">
               </picture>
             </a>
@@ -164,7 +164,7 @@
                   <button class="form__button" type="submit">Задать вопрос</button>
                   <div class="form__checkbox">
                     <label for="checkbox">Я согласен на обработку  персональных данных</label>
-                    <input class="visually-hidden" id="checkbox" type="checkbox" name="agreement" checked>
+                    <input class="visually-hidden" id="checkbox" type="checkbox" name="agreement" checked required>
                     <span class="form__checkbox-visible"></span>
                   </div>
                 </div>
@@ -291,20 +291,20 @@
                   </label>
                 </div>
               </div>
-              <div class="form__comment custom-textarea" data-validate-type="text">
+              <div class="form__comment form__comment--modal custom-textarea" data-validate-type="text">
                 <textarea name="comment" cols="57" rows="7" placeholder="Ваш вопрос"></textarea>
               </div>
-              <div class="form__inner form__inner--modal">
-                <button class="form__button" type="submit">Задать вопрос</button>
-                <div class="form__checkbox">
+              <div class="form__wrap form__wrap--modal">
+                <button class="form__button" type="submit">Отправить</button>
+                <div class="form__checkbox" data-message-base="Поле обязательно к заполнению">
                   <label for="checkbox">Я согласен на обработку  персональных данных</label>
-                  <input class="visually-hidden" type="checkbox" name="agreement" checked>
+                  <input class="visually-hidden" type="checkbox" checked required>
                   <span class="form__checkbox-visible form__checkbox-visible--modal"></span>
                 </div>
               </div>
             </form>
             <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-              <svg class="modal__icon" width="15" height="15">
+              <svg class="modal__icon" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-close"></use>
               </svg>
             </button>
