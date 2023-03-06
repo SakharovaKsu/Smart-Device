@@ -1,9 +1,10 @@
 @media (max-width: ($vp-1920)) {
   .form {
-    padding-top: 156px;
-    padding-bottom: 238px;
+    padding-top: 165px;
+    padding-bottom: 250px;
     background-size: cover;
-    background: linear-gradient(319deg, $color-deep-sky-blue 69.5%, $color-cerulean 69.5%);
+    background: linear-gradient(319deg, $color-deep-sky-blue 66.3%, $color-cerulean 66%);
+    margin-right: 10px;
     }
   }
 
@@ -11,16 +12,16 @@
     position: relative;
     max-width: 585px;
     margin-left: auto;
-    padding-left: 34px;
+    padding-left: 5px;
     color: $color-default-white;
 
       &::before {
       position: absolute;
       content: "";
-      width: 482px;
-      height: 270px;
+      width: 512px;
+      height: 285px;
       top: 19%;
-      left: -108%;
+      left: -107%;
       @include graphic-retina("../img/paper-airplane", "png");
       background-size: 100%;
     }
@@ -32,7 +33,8 @@
     font-size: 36px;
     line-height: 51px;
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 11px;
+    margin-left: -5px;
   }
 
   .form p {
@@ -45,7 +47,7 @@
     display: flex;
     gap: 30px;
     align-items: flex-end;
-    margin-top: 34px;
+    margin-top: 37px;
   }
 
   .form__field {
@@ -86,8 +88,9 @@
 
   .form__comment textarea {
     width: 100%;
-    padding-top: 22px;
+    padding-top: 27px;
     padding-left: 14px;
+    height: 155px;
 
     &::placeholder {
       color: $color-default-white;
@@ -112,7 +115,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $color-default-white;
-    padding: 11px 63px;
+    padding: 13px 70px;
     background: $color-black-pearl;
     border: none;
     border-radius: 3px;
@@ -133,8 +136,8 @@
 
   .form__checkbox {
     position: relative;
-    padding-left: 43px;
-    margin-bottom: -7px;
+    padding-left: 45px;
+    margin-bottom: -4px;
   }
 
   .form__checkbox label {
@@ -149,8 +152,8 @@
   .form__checkbox-visible::before {
     position: absolute;
     content: "";
-    left: 17px;
-    top: 7px;
+    left: 19px;
+    top: 8px;
     width: 15px;
     height: 15px;
     border: 1px solid $color-default-white;
@@ -163,7 +166,7 @@
     width: 7px;
     height: 7px;
     top: 11px;
-    left: 20px;
+    left: 22px;
     background-image: url("../../img/svg/check-mark.svg");
   }
 
@@ -180,44 +183,6 @@
   .form__checkbox input:hover + .form__checkbox-visible::before,
   .form__checkbox input:focus + .form__checkbox-visible::before {
     border: 1px solid $color-black-pearl;
-  }
-
-  .form__checkbox input:hover + .form__checkbox-visible--modal::before,
-  .form__checkbox input:focus + .form__checkbox-visible--modal::before {
-    border: 1px solid $color-black-pearl;
-  }
-
-@media (max-width: ($vp-1920 - 1px)) {
-  .form {
-    padding-top: 166px;
-    padding-bottom: 252px;
-  }
-
-  .form__box {
-    padding-left: 3px;
-
-    &::before {
-      height: 288px;
-      width: 514px;
-    }
-  }
-
-  .form h2 {
-    margin-bottom: 11px;
-  }
-
-  .form p {
-    margin-bottom: 0;
-  }
-
-  .form textarea {
-    height: 155px;
-    padding-top: 27px;
-    padding-left: 16px;
-  }
-
-  .form__button {
-    padding: 13px 71px;
   }
 
   .form--modal {
@@ -262,6 +227,38 @@
     top: 7px;
     left: 10px;
   }
+
+@media (max-width: ($vp-1920 - 1px)) {
+  .form {
+    margin-right: 0;
+    padding-bottom: 252px;
+    background: linear-gradient(319deg, $color-deep-sky-blue 69.5%, $color-cerulean 69.5%);
+  }
+
+  .form__box {
+    padding-left: 3px;
+
+    &::before {
+      height: 288px;
+      width: 514px;
+    }
+  }
+
+  .form__inner {
+    margin-top: 35px;
+  }
+
+  .form h2 {
+    margin-bottom: 11px;
+  }
+
+  .form p {
+    margin-bottom: 0;
+  }
+
+  .form textarea {
+    padding-left: 16px;
+  }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
@@ -282,6 +279,7 @@
   }
 
   .form h2 {
+    margin-left: 0;
     margin-bottom: 5px;
   }
 

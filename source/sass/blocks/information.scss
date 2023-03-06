@@ -1,23 +1,23 @@
 .information {
   display: flex;
-  padding-bottom: 113px;
+  padding-bottom: 120px;
 }
 
 .information__box {
   position: relative;
-  margin-left: 335px;
-  padding-left: 235px;
+  margin-left: 350px;
+  padding-left: 249px;
 
   &::after {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
-    width: 140px;
-    height: 306px;
+    width: 146px;
+    height: 319px;
     @include graphic-retina("../img/2022", "png");
     background-repeat: no-repeat;
-    background-size: 140px 306px;
+    background-size: 149px 319px;
   }
 }
 
@@ -52,8 +52,8 @@
   border: 1px solid $color-deep-sky-blue;
   border-radius: 3px;
   background: transparent;
-  padding: 13px 43px;
-  margin-top: 14px;
+  padding: 13px 49px;
+  margin-top: 22px;
   cursor: pointer;
 
   @include hover-focus {
@@ -70,15 +70,14 @@
 
 @media (max-width: ($vp-1920 - 1px)) {
   .information {
-    padding-bottom: 121px;
     justify-content: center;
   }
 
   .information__box {
-    margin-left: 19px;
+    margin-left: 1px;
 
     &::after {
-      left: -13px;
+      left: -2px;
       width: 145px;
       height: 318px;
       background-size: 145px 318px;
@@ -108,7 +107,7 @@
   }
 
   .information p {
-    max-width: 500px;
+    max-width: 496px;
   }
 
   .information__box {
@@ -116,7 +115,7 @@
     padding-left: 180px;
 
     &::after {
-      left: 6px;
+      left: 3px;
       top: 5px;
     }
   }

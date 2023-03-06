@@ -1,8 +1,8 @@
 .intro {
   position: relative;
-  padding-top: 288px;
-  padding-bottom: 267px;
-  padding-left: 102px;
+  padding-top: 305px;
+  padding-bottom: 280px;
+  padding-left: 125px;
   background-color: $color-black-pearl;
   @include graphic-retina("../../img/background-image", "jpg");
   background-size: no-repeat;
@@ -21,14 +21,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 }
 
 .intro p {
   font-size: 22px;
   line-height: 155%;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 46px;
   max-width: 685px;
 }
 
@@ -44,7 +44,7 @@
   background-color: $color-deep-sky-blue;
   border: none;
   border-radius: 3px;
-  padding: 15px 22px;
+  padding: 17px 33px;
 
   @include hover-focus {
     background-color: $color-alice-blue;
@@ -61,22 +61,8 @@
 }
 
 @media (max-width: ($vp-1920 - 1px)) {
-  .intro {
-    padding-top: 304px;
-    padding-left: 125px;
-    padding-bottom: 281px;
-  }
-
-  .intro h2 {
-    margin-bottom: 32px;
-  }
-
   .intro p {
     margin-bottom: 48px;
-  }
-
-  .intro__button {
-    padding: 17px 33px;
   }
 }
 

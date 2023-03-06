@@ -1,6 +1,6 @@
 .footer {
   background-color: $color-black-pearl;
-  padding: 59px 0 55px 0;
+  padding: 57px 0 55px 0;
 }
 
 .footer__box {
@@ -9,7 +9,7 @@
 }
 
 .footer img {
-  margin-top: -8px;
+  margin-top: -6px;
 }
 
 .footer__list {
@@ -19,7 +19,7 @@
 
 .footer__list--nav {
   column-count: 2;
-  column-gap: 18px;
+  column-gap: 15px;
 }
 
 .footer__contact {
@@ -38,7 +38,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .footer__link,
@@ -46,11 +46,12 @@
   display: inline-block;
   line-height: 135%;
   color: $color-white-transparency;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   margin-top: 0;
 }
 
 .footer__link {
+  margin-bottom: 8px;
   @include hover-focus {
     color: $color-deep-sky-blue;
   }
@@ -61,12 +62,20 @@
 }
 
 .footer__nav {
-  padding-left: 142px;
+  padding-left: 159px;
 }
 
 @media (max-width: ($vp-1920 - 1px)) {
+  .footer {
+    padding-top: 55px;
+  }
+
+  .footer img {
+    margin-top: -7px;
+  }
+
   .footer__nav {
-    padding-left: 163px;
+    padding-left: 162px;
   }
 
   .footer__contact {
@@ -91,7 +100,7 @@
     display: grid;
     grid-template-areas: "social social"
     "nav contact";
-    row-gap: 22px;
+    row-gap: 30px;
     column-gap: 30px;
     justify-content: space-between;
   }

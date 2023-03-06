@@ -20,12 +20,15 @@
 
 .header__list {
   display: flex;
-  gap: 108px;
+  align-items: center;
+  gap: 118px;
   padding-left: 0;
+  padding-right: 6px;
 }
 
 .header__link {
   display: flex;
+  align-items: center;
   color: $color-alice-blue;
 
   @include hover-focus {
@@ -65,6 +68,7 @@
   background-color: transparent;
   padding: 10px 15px;
   cursor: pointer;
+  margin-right: 61px;
 
   @include hover-focus {
     color: $color-black-pearl;
@@ -89,7 +93,6 @@
 
   .header__button {
     padding: 11px 16px;
-    margin-right: 61px;
   }
 }
 
@@ -107,6 +110,7 @@
   .header__list {
     gap: 20px;
     flex-wrap: wrap;
+    padding-right: 0;
   }
 
   .header__link {

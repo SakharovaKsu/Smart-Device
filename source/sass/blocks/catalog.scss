@@ -1,7 +1,7 @@
 @media (max-width: ($vp-1920)) {
   .catalog {
-    padding-top: 61px;
-    padding-bottom: 133px;
+    padding-top: 66px;
+    padding-bottom: 141px;
     background-color: $color-black-pearl;
   }
 
@@ -12,7 +12,7 @@
     line-height: 51px;
     color: $color-default-white;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   .catalog__desc-mobile {
@@ -21,8 +21,8 @@
 
   .catalog__list {
     display: grid;
-    grid-template-columns: repeat(3, 333px);
-    gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 84px;
     justify-content: center;
     padding-left: 0;
     margin-bottom: 0;
@@ -33,7 +33,7 @@
     position: relative;
     list-style-type: none;
     background-color: $color-cerulean;
-    padding: 44px 81px 513px 37px;
+    padding: 47px 81px 543px 40px;
 
     &--one-pic {
       @include graphic-retina("../img/catalog-one-pic", "jpg");
@@ -55,8 +55,8 @@
       content: "";
       bottom: 0;
       right: 0;
-      width: 58px;
-      height: 58px;
+      width: 60px;
+      height: 60px;
       background-color: $color-deep-sky-blue;
       background-image: url("../../img/svg/arrow.svg");
       background-repeat: no-repeat;
@@ -102,11 +102,6 @@
 }
 
 @media (max-width: ($vp-1920 - 1px)) {
-  .catalog {
-    padding-top: 67px;
-    padding-bottom: 140px;
-  }
-
   .catalog__list {
     grid-template-columns: repeat(3,349px);
     gap: 86px;
@@ -145,6 +140,10 @@
 
     &--three-pic {
       @include graphic-retina("../img/catalog-three-pic-tablet", "jpg");
+    }
+
+    &::before {
+      background-position: 30px 23px;
     }
   }
 
