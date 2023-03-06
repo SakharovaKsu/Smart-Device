@@ -10,8 +10,9 @@
   ],
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "eslint": "eslint source/js/",
+    "test": "npm run editorconfig & npm run stylelint & npm run eslint",
     "build": "cross-env NODE_ENV=production gulp build",
     "dev": "cross-env NODE_ENV=production gulp dev",
     "start": "cross-env NODE_ENV=development gulp start",
@@ -52,8 +53,10 @@
     "imagemin-pngquant": "9.0.2",
     "imagemin-svgo": "10.0.1",
     "postcss": "8.4.14",
+    "postcss-scss": "4.0.6",
     "sass": "1.53.0",
-    "stylelint": "^13.13.1",
+    "stylelint": "15.2.0",
+    "stylelint-config-htmlacademy": "1.1.4",
     "stylelint-config-standard": "^30.0.1",
     "webpack": "4.42.0",
     "webpack-stream": "5.2.1"
