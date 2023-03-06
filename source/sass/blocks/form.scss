@@ -185,29 +185,14 @@
     border: 1px solid $color-black-pearl;
   }
 
-  .form--modal {
-    position: relative;
-    max-width: 600px;
-    background: $color-deep-sky-blue;
-    padding: 40px;
-    color: $color-default-white;
-    min-height: 610px;
-
-    & h2 {
-      margin-bottom: 1px;
-      font-size: 30px;
-      line-height: 140.62%;
-    }
-  }
-
   .form__inner--modal {
     flex-direction: column;
-    margin-top: 32px;
+    margin-top: 39px;
     gap: 23px;
   }
 
   .form__comment--modal {
-    margin-top: 23px;
+    margin-top: 22px;
   }
 
   .form__wrap--modal {
@@ -217,15 +202,19 @@
     margin-top: 25px;
   }
 
+  .form__checkbox--modal {
+    padding-left: 34px;
+  }
+
   .form__checkbox-visible--modal {
     &::before {
-      left: 7px;
+      left: 9px;
     }
   }
 
   .form__checkbox input[type=checkbox]:checked + .form__checkbox-visible--modal::after {
     top: 7px;
-    left: 10px;
+    left: 12px;
   }
 
 @media (max-width: ($vp-1920 - 1px)) {
