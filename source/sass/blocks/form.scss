@@ -1,221 +1,221 @@
 @media (max-width: ($vp-1920)) {
-  .form {
-    padding-top: 165px;
-    padding-bottom: 250px;
-    background-size: cover;
-    background: linear-gradient(319deg, $color-deep-sky-blue 66.3%, $color-cerulean 66%);
-    margin-right: 10px;
-    }
+.form {
+  padding-top: 165px;
+  padding-bottom: 250px;
+  background-size: cover;
+  background: linear-gradient(319deg, $color-deep-sky-blue 66.3%, $color-cerulean 66%);
+  margin-right: 10px;
   }
+}
 
-  .form__box {
-    position: relative;
-    max-width: 585px;
-    margin-left: auto;
-    padding-left: 5px;
-    color: $color-default-white;
+.form__box {
+  position: relative;
+  max-width: 585px;
+  margin-left: auto;
+  padding-left: 5px;
+  color: $color-default-white;
 
-      &::before {
-      position: absolute;
-      content: "";
-      width: 512px;
-      height: 285px;
-      top: 19%;
-      left: -107%;
-      @include graphic-retina("../img/paper-airplane", "png");
-      background-size: 100%;
-    }
-  }
-
-  .form h2 {
-    font-family: $ff-roboto-condensed;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 51px;
-    margin: 0;
-    margin-bottom: 11px;
-    margin-left: -5px;
-  }
-
-  .form p {
-    margin: 0;
-    margin-bottom: -4px;
-  }
-
-  .form__inner,
-  .form__wrap{
-    display: flex;
-    gap: 30px;
-    align-items: flex-end;
-    margin-top: 37px;
-  }
-
-  .form__field {
-    display: inline-block;
-    flex: 1 1;
-    width: 100%;
-  }
-
-  .form__field input,
-  .form__comment textarea {
-    padding: 15px 0 15px 15px;
-    background: $color-pattens-blue;
-    border: none;
-    border-radius: 3px;
-  }
-
-  .form__field input {
-    display: block;
-    width: 100%;
-
-    &::placeholder {
-      color: $color-default-white;
-    }
-
-    &:not(:disabled):hover,
-    &:not(:disabled):focus {
-      outline: 1px solid $color-black-pearl;
-    }
-
-    &:active::placeholder {
-      color: $color-default-white;
-    }
-  }
-
-  .form__comment {
-    margin-top: 20px;
-  }
-
-  .form__comment textarea {
-    width: 100%;
-    padding-top: 27px;
-    padding-left: 14px;
-    height: 155px;
-
-    &::placeholder {
-      color: $color-default-white;
-    }
-
-    &:not(:disabled):hover,
-    &:not(:disabled):focus {
-      outline: 1px solid $color-black-pearl;
-    }
-
-    &:active::placeholder {
-      color: $color-default-white;
-    }
-  }
-
-  .form__button {
-    font-family: $ff-roboto-condensed;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $color-default-white;
-    padding: 13px 70px;
-    background: $color-black-pearl;
-    border: none;
-    border-radius: 3px;
-    flex-shrink: 0;
-
-    @include hover-focus {
-      background: $color-alice-blue;
-      outline: 2px solid $color-black-pearl;
-      color: $color-black-pearl;
-    }
-
-    @include active {
-      background: $color-alice-blue;
-      outline: 2px solid $color-black-pearl;
-      color: $color-black-pearl;
-    }
-  }
-
-  .form__checkbox {
-    position: relative;
-    padding-left: 45px;
-    margin-bottom: -4px;
-  }
-
-  .form__checkbox label {
-    position: relative;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 16px;
-    color: $color-default-white;
-    opacity: 0.8;
-  }
-
-  .form__checkbox-visible::before {
-    position: absolute;
-    content: "";
-    left: 19px;
-    top: 8px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid $color-default-white;
-    border-radius: 2px;
-  }
-
-  .form__checkbox input[type=checkbox]:checked + .form__checkbox-visible::after {
-    position: absolute;
-    content: "";
-    width: 7px;
-    height: 7px;
-    top: 11px;
-    left: 22px;
-    background-image: url("../../img/svg/check-mark.svg");
-  }
-
-  .form__checkbox label {
-    @include hover-focus {
-      color: $color-black-pearl;
-    }
-  }
-
-  .form__checkbox-visible--modal::before {
-    top: 4px;
-  }
-
-  .form__checkbox input:hover + .form__checkbox-visible::before,
-  .form__checkbox input:focus + .form__checkbox-visible::before {
-    border: 1px solid $color-black-pearl;
-  }
-
-  .form__inner--modal {
-    flex-direction: column;
-    margin-top: 39px;
-    gap: 23px;
-  }
-
-  .form__comment--modal {
-    margin-top: 22px;
-  }
-
-  .form__wrap--modal {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 15px;
-    margin-top: 25px;
-  }
-
-  .form__checkbox--modal {
-    padding-left: 34px;
-  }
-
-  .form__checkbox-visible--modal {
     &::before {
-      left: 9px;
-    }
+    position: absolute;
+    content: "";
+    width: 512px;
+    height: 285px;
+    top: 19%;
+    left: -107%;
+    @include graphic-retina("../img/paper-airplane", "png");
+    background-size: 100%;
+  }
+}
+
+.form h2 {
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  margin-bottom: 11px;
+  margin-left: -5px;
+}
+
+.form p {
+  margin: 0;
+  margin-bottom: -4px;
+}
+
+.form__inner,
+.form__wrap{
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  margin-top: 37px;
+}
+
+.form__field {
+  display: inline-block;
+  flex: 1 1;
+  width: 100%;
+}
+
+.form__field input,
+.form__comment textarea {
+  padding: 15px 0 15px 15px;
+  background: $color-pattens-blue;
+  border: none;
+  border-radius: 3px;
+}
+
+.form__field input {
+  display: block;
+  width: 100%;
+
+  &::placeholder {
+    color: $color-default-white;
   }
 
-  .form__checkbox input[type=checkbox]:checked + .form__checkbox-visible--modal::after {
-    top: 7px;
-    left: 12px;
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    outline: 1px solid $color-black-pearl;
   }
+
+  &:active::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.form__comment {
+  margin-top: 20px;
+}
+
+.form__comment textarea {
+  width: 100%;
+  padding-top: 27px;
+  padding-left: 14px;
+  height: 155px;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    outline: 1px solid $color-black-pearl;
+  }
+
+  &:active::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.form__button {
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  padding: 13px 70px;
+  background: $color-black-pearl;
+  border: none;
+  border-radius: 3px;
+  flex-shrink: 0;
+
+  @include hover-focus {
+    background: $color-alice-blue;
+    outline: 2px solid $color-black-pearl;
+    color: $color-black-pearl;
+  }
+
+  @include active {
+    background: $color-alice-blue;
+    outline: 2px solid $color-black-pearl;
+    color: $color-black-pearl;
+  }
+}
+
+.form__checkbox {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: -4px;
+}
+
+.form__checkbox label {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+}
+
+.form__checkbox-visible::before {
+  position: absolute;
+  content: "";
+  left: 19px;
+  top: 8px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.form__checkbox input[type=checkbox]:checked + .form__checkbox-visible::after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  top: 11px;
+  left: 22px;
+  background-image: url("../../img/svg/check-mark.svg");
+}
+
+.form__checkbox label {
+  @include hover-focus {
+    color: $color-black-pearl;
+  }
+}
+
+.form__checkbox-visible--modal::before {
+  top: 4px;
+}
+
+.form__checkbox input:hover + .form__checkbox-visible::before,
+.form__checkbox input:focus + .form__checkbox-visible::before {
+  border: 1px solid $color-black-pearl;
+}
+
+.form__inner--modal {
+  flex-direction: column;
+  margin-top: 39px;
+  gap: 23px;
+}
+
+.form__comment--modal {
+  margin-top: 22px;
+}
+
+.form__wrap--modal {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.form__checkbox--modal {
+  padding-left: 34px;
+}
+
+.form__checkbox-visible--modal {
+  &::before {
+    left: 9px;
+  }
+}
+
+.form__checkbox input[type=checkbox]:checked + .form__checkbox-visible--modal::after {
+  top: 7px;
+  left: 12px;
+}
 
 @media (max-width: ($vp-1920 - 1px)) {
   .form {

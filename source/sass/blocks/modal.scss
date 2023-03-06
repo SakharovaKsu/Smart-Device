@@ -33,10 +33,6 @@
   &--fit-content {
     .modal__content {
       width: auto;
-
-      @include vp-767 {
-        width: 100%;
-      }
     }
   }
 
@@ -54,6 +50,12 @@
     opacity: 1;
 
     pointer-events: auto;
+  }
+}
+
+.modal--fit-content {
+  @include vp-767 {
+    width: 100%;
   }
 }
 

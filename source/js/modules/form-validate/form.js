@@ -2,6 +2,7 @@ import {Validator} from './validator';
 import {callbacks} from './callback';
 import {initPhoneInput} from './init-phone-input';
 
+const TIME_OUT = 500;
 export class Form {
   constructor() {
     this._validator = new Validator();
@@ -64,13 +65,12 @@ export class Form {
       if (this._callbacks[callback].reset) {
         setTimeout(() => {
           this.reset(event.target);
-        }, this._callbacks[callback].resetTimeout ? this._callbacks[callback].resetTimeout : 500);
+        }, this._callbacks[callback].resetTimeout ? this._callbacks[callback].resetTimeout : TIME_OUT);
       }
       return;
     }
     if (!this.validateForm(event.target) && callback) {
       this._callbacks[callback].errorCallback(event);
-      return;
     }
   }
 

@@ -15,6 +15,7 @@
     left: 0;
     width: 146px;
     height: 319px;
+
     @include graphic-retina("../img/2022", "png");
     background-repeat: no-repeat;
     background-size: 149px 319px;
@@ -107,6 +108,7 @@
   }
 
   .information p {
+    margin-bottom: 19px;
     max-width: 496px;
   }
 
@@ -122,10 +124,6 @@
 
   .information h2 {
     margin-bottom: 10px;
-  }
-
-  .information p {
-    margin-bottom: 19px;
   }
 
   .information__button {

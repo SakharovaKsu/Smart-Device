@@ -59,8 +59,7 @@
     textarea {
       outline: 1px solid $color-torch-red;
 
-      &:focus,
-      &:hover {
+      @include hover-focus {
         outline: 1px solid $color-wild-watermelon;
       }
     }
@@ -70,8 +69,7 @@
     input {
       outline: 1px solid $color-green;
 
-      &:focus,
-      &:hover {
+      @include hover-focus {
         outline: 1px solid $color-la-palma;
       }
     }

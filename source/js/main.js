@@ -1,4 +1,3 @@
-import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordionFooter} from './modules/accordion-footer';
@@ -12,7 +11,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
-  iosVhFix();
   initAccordionFooter();
   readMore();
   scrollPage();

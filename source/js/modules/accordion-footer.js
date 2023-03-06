@@ -5,11 +5,11 @@ export const initAccordionFooter = () => {
     el.addEventListener('click', (e) => {
       const self = e.target.closest('.accordion');
 
-      accordions.forEach((el) => {
-        if (el === self && !self.classList.contains('accordion--open')) {
-          el.classList.add('accordion--open');
+      accordions.forEach((element) => {
+        if (element === self && !self.classList.contains('accordion--open')) {
+          element.classList.add('accordion--open');
         } else {
-          el.classList.remove('accordion--open');
+          element.classList.remove('accordion--open');
         }
       });
     });

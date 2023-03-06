@@ -61,7 +61,7 @@
       background-image: url("../../img/svg/arrow.svg");
       background-repeat: no-repeat;
       background-position: 27px 23px;
-      border-radius: 3px 0px 0px 0px;
+      border-radius: 3px 0 0;
       border: 1px solid $color-deep-sky-blue;
     }
 
@@ -81,14 +81,14 @@
     }
 
     &:active::before {
-      background-color:  $color-deep-sky-blue;
+      background-color: $color-deep-sky-blue;
       opacity: 0.8;
     }
   }
 
   .catalog__link {
     display: inline-block;
-    font-size: $ff-roboto-condensed;
+    font-family: $ff-roboto-condensed;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -103,7 +103,7 @@
 
 @media (max-width: ($vp-1920 - 1px)) {
   .catalog__list {
-    grid-template-columns: repeat(3,349px);
+    grid-template-columns: repeat(3, 349px);
     gap: 86px;
   }
 

@@ -5,9 +5,9 @@ export const scrollPage = () => {
     e.preventDefault();
 
     const blockId = anchor.getAttribute('href');
-    document.querySelector('' + blockId).scrollIntoView({
+    document.querySelector(blockId).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
-    })
-  })
+    });
+  });
 };

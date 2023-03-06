@@ -4,8 +4,8 @@
   padding-bottom: 280px;
   padding-left: 125px;
   background-color: $color-black-pearl;
+
   @include graphic-retina("../../img/background-image", "jpg");
-  background-size: no-repeat;
   background-position: center;
   width: 100%;
   height: auto;
@@ -34,7 +34,7 @@
 
 .intro__button {
   display: inline-block;
-  font-size: $ff-roboto-condensed;
+  font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
