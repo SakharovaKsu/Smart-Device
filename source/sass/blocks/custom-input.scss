@@ -35,25 +35,6 @@
     }
   }
 
-  &__label {
-    @media screen and (max-width: 767px) {
-      margin: 0 0 18px 0;
-    }
-  }
-
-  &__error {
-    position: absolute;
-    right: 0;
-    bottom: 35px;
-    color: $color-torch-red;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-
-    @media screen and (max-width: 767px) {
-      bottom: 20px;
-    }
-  }
-
   &.is-invalid {
     input,
     textarea {

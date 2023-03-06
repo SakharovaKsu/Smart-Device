@@ -53,12 +53,6 @@
   }
 }
 
-.modal--fit-content {
-  @include vp-767 {
-    width: 100%;
-  }
-}
-
 .modal__icon {
   fill: $color-default-white;
 
@@ -113,12 +107,6 @@
   @include vp-767 {
     width: 100%;
     padding: 20px;
-  }
-
-  & h2 {
-    margin-bottom: 1px;
-    font-size: 30px;
-    line-height: 140.62%;
   }
 }
 

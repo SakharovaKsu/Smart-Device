@@ -40,6 +40,7 @@
 .mobile-hidden {
   display: inline;
 }
+
 .information__box:not(.is-active) {
   .mobile-hidden {
     @include vp-767 {
