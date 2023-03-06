@@ -1,15 +1,14 @@
 {
-  "name": "Liga-A-accelerator-template",
+  "name": "smart-device",
   "version": "2.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
   "browserslist": [
     "last 3 versions",
     "Firefox ESR"
   ],
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "eslint": "eslint source/js/",
     "test": "npm run editorconfig & npm run stylelint & npm run eslint",
     "build": "cross-env NODE_ENV=production gulp build",
@@ -38,7 +37,6 @@
     "del": "6.1.1",
     "duplicate-package-checker-webpack-plugin": "3.0.0",
     "eslint": "7.32.0",
-    "eslint-config-htmlacademy": "^9.0.0",
     "gulp": "4.0.2",
     "gulp-csso": "4.0.1",
     "gulp-group-css-media-queries": "1.2.2",
@@ -52,11 +50,8 @@
     "imagemin-pngquant": "9.0.2",
     "imagemin-svgo": "10.0.1",
     "postcss": "8.4.14",
-    "postcss-scss": "4.0.6",
     "sass": "1.53.0",
-    "stylelint": "15.2.0",
-    "stylelint-config-htmlacademy": "1.1.4",
-    "stylelint-config-standard": "^30.0.1",
+    "stylelint": "13.13.1",
     "webpack": "4.42.0",
     "webpack-stream": "5.2.1"
   },

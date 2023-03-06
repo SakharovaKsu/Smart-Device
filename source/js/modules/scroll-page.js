@@ -7,7 +7,7 @@ export const scrollPage = () => {
     const blockId = anchor.getAttribute('href');
     document.querySelector(blockId).scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
+      block: 'start',
     });
   });
 };

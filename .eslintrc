@@ -1,23 +1,12 @@
 root: true
 
 parserOptions:
-  ecmaVersion: 2018
-  sourceType: "module"
+  ecmaVersion: 2015
+  sourceType: 'module'
 
 env:
-  es2017: true
+  es6: true
   browser: true
+  commonjs: true
 
-extends:
-  "htmlacademy/vanilla"
-
-rules:
-  no-magic-numbers:
-    - error
-    -
-      ignore:
-        - -1
-        - 0
-        - 1
-        - 10
-        - 100
+extends: "./eslintconfig.cjs"
