@@ -34,7 +34,6 @@
     list-style-type: none;
     background-color: $color-cerulean;
 
-
     &--one-pic {
       @include graphic-retina("../img/catalog-one-pic", "jpg");
       background-size: cover;
