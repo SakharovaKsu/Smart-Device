@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  top: -36.5%;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -48,7 +48,6 @@
     transform: scale(1);
     visibility: visible;
     opacity: 1;
-
     pointer-events: auto;
   }
 }
@@ -124,10 +123,6 @@
 }
 
 @media (max-width: ($vp-1920 - 1px)) {
-  .modal {
-    top: -20.5%;
-  }
-
   .modal__content {
     padding: 39px;
     background: $color-deep-sky-blue;
@@ -140,10 +135,6 @@
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
-  .modal {
-    top: 0;
-  }
-
   .modal__content {
     padding: 40px;
 

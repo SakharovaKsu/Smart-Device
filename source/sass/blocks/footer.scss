@@ -21,11 +21,15 @@
 
 .footer__list--nav {
   column-count: 2;
-  column-gap: 45px;
+  column-gap: 48px;
 }
 
 .footer__item {
   break-inside: avoid-column;
+
+  &:last-child {
+    margin-bottom: 90px;
+  }
 }
 
 .footer h2 {
@@ -90,6 +94,7 @@
     row-gap: 30px;
     column-gap: 30px;
     justify-content: space-between;
+    justify-items: stretch;
   }
 
   .footer__social {
@@ -110,6 +115,7 @@
 
   .footer__contact {
     grid-area: contact;
+    margin-left: -56px;
   }
 
   .footer__list--column {
@@ -123,6 +129,10 @@
 
   .footer__item {
     max-width: 320px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -152,6 +162,7 @@
   }
 
   .footer__contact {
+    margin-left: 0;
     margin-top: 0;
     padding-left: 0;
     padding-top: 2px;

@@ -1242,15 +1242,19 @@ button,
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
-  -webkit-column-gap: 45px;
-  -moz-column-gap: 45px;
-  column-gap: 45px;
+  -webkit-column-gap: 48px;
+  -moz-column-gap: 48px;
+  column-gap: 48px;
 }
 
 .footer__item {
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
   break-inside: avoid-column;
+}
+
+.footer__item:last-child {
+  margin-bottom: 90px;
 }
 
 .footer h2 {
@@ -1373,7 +1377,7 @@ button,
   background-color: #00b2ff;
   border: none;
   border-radius: 3px;
-  padding: 17px 33px;
+  padding: 17px 41px;
 }
 
 .intro__button:hover {
@@ -1586,7 +1590,7 @@ button,
 
 .modal {
   position: fixed;
-  top: -36.5%;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -2352,10 +2356,6 @@ button,
     padding-left: 16px;
   }
 
-  .modal {
-    top: -20.5%;
-  }
-
   .modal__content {
     padding: 39px;
     background: #00b2ff;
@@ -2435,6 +2435,7 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    justify-items: stretch;
   }
 
   .footer__social {
@@ -2463,6 +2464,7 @@ button,
 
   .footer__contact {
     grid-area: contact;
+    margin-left: -56px;
   }
 
   .footer__list--column {
@@ -2481,6 +2483,10 @@ button,
 
   .footer__item {
     max-width: 320px;
+  }
+
+  .footer__item:last-child {
+    margin-bottom: 0;
   }
 
   .footer__social {
@@ -2681,10 +2687,6 @@ button,
     margin-top: 13px;
   }
 
-  .modal {
-    top: 0;
-  }
-
   .modal__content {
     padding: 40px;
   }
@@ -2786,6 +2788,7 @@ button,
   }
 
   .footer__contact {
+    margin-left: 0;
     margin-top: 0;
     padding-left: 0;
     padding-top: 2px;
@@ -3064,18 +3067,18 @@ button,
     padding-bottom: 83px;
   }
 
-  .form h2 {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 140.62%;
-    margin-bottom: 8px;
-  }
-
   .form p {
     font-size: 14px;
     line-height: 134.4%;
     max-width: 200px;
     margin-bottom: 35px;
+  }
+
+  .form h2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140.62%;
+    margin-bottom: 8px;
   }
 
   .form__inner,
