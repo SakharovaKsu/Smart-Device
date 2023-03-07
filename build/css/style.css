@@ -1728,7 +1728,7 @@ button,
   cursor: pointer;
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .catalog {
     padding-top: 66px;
     padding-bottom: 141px;
@@ -2182,7 +2182,7 @@ button,
   }
 }
 
-@media (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1920px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1920px) and (min-resolution: 2dppx) {
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1920px) and (min-resolution: 2dppx) {
 @supports (background-image: url("../images/../img/catalog-one-pic@2x.webp")) {
     .catalog__item--one-pic {
       background-image: url("../images/../img/catalog-one-pic@2x.webp");
