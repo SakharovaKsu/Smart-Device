@@ -96,17 +96,17 @@
   min-height: 610px;
   margin-right: 7px;
 
-  & h2 {
-    margin-bottom: 1px;
-    margin-left: 0;
-    font-size: 30px;
-    line-height: 140.62%;
-  }
-
   @include vp-767 {
     width: 100%;
     padding: 20px;
   }
+}
+
+.modal__content h2 {
+  margin-bottom: 1px;
+  margin-left: 0;
+  font-size: 30px;
+  line-height: 140.62%;
 }
 
 .modal__close-btn {
@@ -127,19 +127,19 @@
     padding: 39px;
     background: $color-deep-sky-blue;
     margin-right: 15px;
+  }
 
-    & h2 {
-      margin-bottom: 1px;
-    }
+  .modal__content h2 {
+    margin-bottom: 1px;
   }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
   .modal__content {
     padding: 40px;
+  }
 
-    & p {
-      max-width: 100%;
-    }
+  .modal__content p {
+    max-width: 100%;
   }
 }
