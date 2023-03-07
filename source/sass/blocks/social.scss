@@ -29,6 +29,7 @@
 @media (max-width: ($vp-1024 - 1px)) {
   .social__list {
     margin-top: 10px;
+    padding-left: 298px;
   }
 }
 
@@ -37,5 +38,6 @@
     margin-left: 0;
     margin-bottom: 22px;
     margin-top: 19px;
+    padding-left: 0;
   }
 }

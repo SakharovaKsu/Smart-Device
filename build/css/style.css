@@ -1728,7 +1728,7 @@ button,
   cursor: pointer;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 2560px) {
   .catalog {
     padding-top: 66px;
     padding-bottom: 141px;
@@ -2182,7 +2182,7 @@ button,
   }
 }
 
-@media (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1920px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1920px) and (min-resolution: 2dppx) {
+@media (max-width: 2560px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 2560px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 2560px) and (min-resolution: 2dppx) {
 @supports (background-image: url("../images/../img/catalog-one-pic@2x.webp")) {
     .catalog__item--one-pic {
       background-image: url("../images/../img/catalog-one-pic@2x.webp");
@@ -2446,7 +2446,6 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    justify-items: stretch;
   }
 
   .footer__social {
@@ -2518,6 +2517,7 @@ button,
 
   .social__list {
     margin-top: 10px;
+    padding-left: 298px;
   }
 
   .intro {
@@ -2828,6 +2828,7 @@ button,
     margin-left: 0;
     margin-bottom: 22px;
     margin-top: 19px;
+    padding-left: 0;
   }
 
   .intro {
