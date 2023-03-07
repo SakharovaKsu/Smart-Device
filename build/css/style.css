@@ -1351,7 +1351,7 @@ button,
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 32px;
@@ -1372,12 +1372,13 @@ button,
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  letter-spacing: 0.05em;
   color: #f2f5f6;
   text-transform: uppercase;
   background-color: #00b2ff;
   border: none;
   border-radius: 3px;
-  padding: 17px 41px;
+  padding: 17px 27px;
 }
 
 .intro__button:hover {
@@ -1482,6 +1483,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 120px;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 .information__box {
@@ -1764,7 +1767,6 @@ button,
     position: relative;
     list-style-type: none;
     background-color: #026593;
-    padding: 47px 81px 543px 40px;
   }
 
   .catalog__item--one-pic {
@@ -1830,19 +1832,10 @@ button,
     border: 1px solid #00b2ff;
   }
 
-  .catalog__item:hover .catalog__link,
-  .catalog__item:focus .catalog__link {
-    color: #00b2ff;
-  }
-
   .catalog__item:hover::before,
   .catalog__item:focus::before {
     background-color: #041827;
     border: 1px solid #00b2ff;
-  }
-
-  .catalog__item:active .catalog__link {
-    color: #ffffff;
   }
 
   .catalog__item:active::before {
@@ -1857,11 +1850,25 @@ button,
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
-    max-width: 190px;
+    padding: 47px 81px 543px 40px;
+    width: 100%;
+    height: 100%;
   }
 
-  .catalog__link br {
-    display: none;
+  .catalog__link:hover {
+    color: #00b2ff;
+  }
+
+  .catalog__link.focus-visible:focus {
+    color: #00b2ff;
+  }
+
+  .catalog__link:focus-visible {
+    outline: 1px solid #00b2ff;
+  }
+
+  .catalog__link:active {
+    color: #ffffff;
   }
 
   .form {
@@ -2169,7 +2176,7 @@ button,
     padding-left: 34px;
   }
 
-  .form__checkbox input[type=checkbox]:checked + .form__checkbox-visible--modal::after {
+  .form__checkbox--modal input[type=checkbox]:checked + .form__checkbox-visible--modal::after {
     top: 7px;
     left: 12px;
   }
@@ -2284,8 +2291,12 @@ button,
   }
 
   .benefits__item {
-    padding: 39px 22px 70px 40px;
+    padding: 41px 22px 70px 40px;
     min-height: 300px;
+  }
+
+  .benefits__icon {
+    margin-bottom: 16px;
   }
 
   .information {
@@ -2299,7 +2310,7 @@ button,
   }
 
   .information__box::after {
-    left: -2px;
+    left: 2px;
     width: 145px;
     height: 318px;
     background-size: 145px 318px;
@@ -2320,7 +2331,7 @@ button,
     gap: 86px;
   }
 
-  .catalog__item {
+  .catalog__link {
     padding: 49px 81px 542px 40px;
   }
 
@@ -2554,7 +2565,7 @@ button,
   }
 
   .information {
-    padding-bottom: 79px;
+    padding-bottom: 80px;
   }
 
   .information p {
@@ -2573,7 +2584,7 @@ button,
   }
 
   .information h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .information__button {
@@ -2593,10 +2604,6 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 30px;
-  }
-
-  .catalog__item {
-    padding: 36px 0 154px 45px;
   }
 
 @supports (background-image: url("../images/../img/catalog-one-pic-tablet.webp")) {
@@ -2640,7 +2647,7 @@ button,
   }
 
   .catalog__link {
-    max-width: 179px;
+    padding: 36px 0 154px 45px;
   }
 
   .catalog__link br {
@@ -2932,16 +2939,24 @@ button,
   }
 
   .benefits__item {
-    padding: 27px 23px 35px;
+    padding: 27px 32px 35px 23px;
     min-height: 340px;
+  }
+
+  .benefits__icon {
+    margin-bottom: 6px;
   }
 
   .benefits__item--height {
     min-height: 325px;
   }
 
-  .benefits__icon {
-    margin-bottom: 6px;
+  .benefits__item--height .benefits__icon {
+    margin-bottom: 8px;
+  }
+
+  .benefits__item--height h3 {
+    margin-bottom: 14px;
   }
 
   .benefits h3 {
@@ -2978,6 +2993,7 @@ button,
 
   .information__button {
     padding: 8px 38px;
+    margin-top: -4px;
   }
 
   .catalog {
@@ -2994,6 +3010,7 @@ button,
   .catalog__link {
     font-size: 18px;
     line-height: 30px;
+    padding: 26px 0 165px 30px;
   }
 
   .catalog__desc {
@@ -3002,10 +3019,6 @@ button,
 
   .catalog__desc-mobile {
     display: block;
-  }
-
-  .catalog__item {
-    padding: 26px 0 165px 30px;
   }
 
   .catalog__item--one-pic {

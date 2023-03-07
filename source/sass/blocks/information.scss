@@ -1,6 +1,8 @@
 .information {
   display: flex;
   padding-bottom: 120px;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 .information__box {
@@ -78,7 +80,7 @@
     margin-left: 1px;
 
     &::after {
-      left: -2px;
+      left: 2px;
       width: 145px;
       height: 318px;
       background-size: 145px 318px;
@@ -104,7 +106,7 @@
 
 @media (max-width: ($vp-1024 - 1px)) {
   .information {
-    padding-bottom: 79px;
+    padding-bottom: 80px;
   }
 
   .information p {
@@ -123,7 +125,7 @@
   }
 
   .information h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .information__button {
@@ -156,5 +158,6 @@
 
   .information__button {
     padding: 8px 38px;
+    margin-top: -4px;
   }
 }

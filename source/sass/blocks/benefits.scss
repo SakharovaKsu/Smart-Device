@@ -68,8 +68,12 @@
   }
 
   .benefits__item {
-    padding: 39px 22px 70px 40px;
+    padding: 41px 22px 70px 40px;
     min-height: 300px;
+  }
+
+  .benefits__icon {
+    margin-bottom: 16px;
   }
 }
 
@@ -110,16 +114,24 @@
   }
 
   .benefits__item {
-    padding: 27px 23px 35px;
+    padding: 27px 32px 35px 23px;
     min-height: 340px;
+  }
+
+  .benefits__icon {
+    margin-bottom: 6px;
   }
 
   .benefits__item--height {
     min-height: 325px;
   }
 
-  .benefits__icon {
-    margin-bottom: 6px;
+  .benefits__item--height .benefits__icon {
+    margin-bottom: 8px;
+  }
+
+  .benefits__item--height h3 {
+    margin-bottom: 14px;
   }
 
   .benefits h3 {

@@ -18,7 +18,7 @@
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 32px;
@@ -39,12 +39,13 @@
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  letter-spacing: 0.05em;
   color: $color-alice-blue;
   text-transform: uppercase;
   background-color: $color-deep-sky-blue;
   border: none;
   border-radius: 3px;
-  padding: 17px 41px;
+  padding: 17px 27px;
 
   @include hover-focus {
     background-color: $color-alice-blue;

@@ -204,7 +204,7 @@
     padding-left: 34px;
   }
 
-  .form__checkbox input[type="checkbox"]:checked + .form__checkbox-visible--modal::after {
+  .form__checkbox--modal input[type="checkbox"]:checked + .form__checkbox-visible--modal::after {
     top: 7px;
     left: 12px;
   }
