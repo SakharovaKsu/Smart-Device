@@ -9,7 +9,6 @@ $color-white-transparency:          rgba(255, 255, 255, 0.7);
 $color-transparent:                 rgba(255, 255, 255, 0);
 
 // Project palette
-// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-black-pearl:                 #041827;
 $color-deep-sky-blue:               #00b2ff;
@@ -34,8 +33,6 @@ $black-to-right:                    linear-gradient(180deg, #041827 80%, rgba(25
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 
-// у некоторых шрифтов в ios возникают проблемы с символом рубля
-// https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-roboto-condensed:               "Roboto Condensed", "Helvetica", sans-serif;
 
 $ff-mono:                           "PTMono", "Arial", sans-serif;
@@ -46,7 +43,6 @@ $ff-mono:                           "PTMono", "Arial", sans-serif;
 $tf-default:                        ease;
 $trans-default:                     0.3s $tf-default;
 
-// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
 $trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
 
 // Viewports
