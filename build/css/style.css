@@ -1358,7 +1358,7 @@ button,
   height: 7px;
   top: 11px;
   left: 22px;
-  background-image: url("../../img/svg/check-mark.svg");
+  background-image: url("../img/svg/check-mark.svg");
 }
 
 .form__checkbox--modal span::before {
@@ -1784,7 +1784,7 @@ button,
     width: 60px;
     height: 60px;
     background-color: #00b2ff;
-    background-image: url("../../img/svg/arrow.svg");
+    background-image: url("../img/svg/arrow.svg");
     background-repeat: no-repeat;
     background-position: 27px 23px;
     border-radius: 3px 0 0;
