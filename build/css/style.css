@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Regular.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Bold.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 400;
   font-family: "PTMono";
   font-display: swap;
-  src: url("../../fonts/PTMono-Regular.woff2") format("woff2"), url("../../fonts/PTMono-Regular.woff") format("woff");
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 *,
@@ -1040,7 +1040,6 @@ button,
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   padding: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -1097,7 +1096,7 @@ button,
   line-height: 31px;
   color: #00b2ff;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 17px;
 }
 
 .benefits p {
@@ -1110,7 +1109,6 @@ button,
   padding-bottom: 250px;
   background: -o-linear-gradient(131deg, #00b2ff 66.3%, #026593 66%);
   background: linear-gradient(319deg, #00b2ff 66.3%, #026593 66%);
-  margin-right: 10px;
 }
 
 .form__box {
@@ -1629,7 +1627,6 @@ button,
   background: #00b2ff;
   max-width: 500px;
   min-height: 610px;
-  margin-right: 7px;
 }
 
 .modal__content h2 {
@@ -1917,11 +1914,11 @@ button,
   }
 
   .intro p {
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
 
   .benefits {
-    padding-top: 116px;
+    padding-top: 120px;
     padding-bottom: 106px;
   }
 
@@ -1931,12 +1928,12 @@ button,
   }
 
   .benefits__item {
-    padding: 41px 22px 70px 40px;
+    padding: 41px 22px 65px 40px;
     min-height: 300px;
   }
 
   .benefits__icon {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
   }
 
   .catalog__list {
@@ -1961,16 +1958,16 @@ button,
   }
 
   .form__box::before {
-    height: 287px;
-    width: 514px;
+    height: 284px;
+    width: 507px;
   }
 
   .form__inner {
-    margin-top: 35px;
+    margin-top: 36px;
   }
 
   .form h2 {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
 
   .form p {
@@ -2331,7 +2328,7 @@ button,
   }
 
   .data-accordion__button {
-    margin-top: 0;
+    margin-top: -4px;
   }
 
   .modal__content {

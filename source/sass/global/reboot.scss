@@ -103,7 +103,7 @@ input[type="number"] {
 // ios button \ inputs reset
 select,
 textarea,
-input:matches(
+input:matches (
     [type="email"],
     [type="number"],
     [type="password"],
@@ -111,7 +111,7 @@ input:matches(
     [type="tel"],
     [type="text"],
     [type="url"]
-  ) {
+    ) {
   appearance: none;
 }
 

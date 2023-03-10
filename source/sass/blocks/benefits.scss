@@ -7,7 +7,6 @@
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   padding: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -59,7 +58,7 @@
   line-height: 31px;
   color: $color-deep-sky-blue;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 17px;
 }
 
 .benefits p {
@@ -69,7 +68,7 @@
 
 @media (max-width: ($vp-1920 - 1px)) {
   .benefits {
-    padding-top: 116px;
+    padding-top: 120px;
     padding-bottom: 106px;
   }
 
@@ -78,12 +77,12 @@
   }
 
   .benefits__item {
-    padding: 41px 22px 70px 40px;
+    padding: 41px 22px 65px 40px;
     min-height: 300px;
   }
 
   .benefits__icon {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
   }
 }
 

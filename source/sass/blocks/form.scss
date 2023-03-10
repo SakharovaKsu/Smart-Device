@@ -2,7 +2,6 @@
   padding-top: 165px;
   padding-bottom: 250px;
   background: linear-gradient(319deg, $color-deep-sky-blue 66.3%, $color-cerulean 66%);
-  margin-right: 10px;
 }
 
 .form__box {
@@ -234,17 +233,17 @@
     padding-left: 3px;
 
     &::before {
-      height: 287px;
-      width: 514px;
+      height: 284px;
+      width: 507px;
     }
   }
 
   .form__inner {
-    margin-top: 35px;
+    margin-top: 36px;
   }
 
   .form h2 {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
 
   .form p {
