@@ -1,4 +1,4 @@
-@media (max-width: 2560px) {
+@media (max-width: $vp-99999) {
   .catalog {
     padding-top: 66px;
     padding-bottom: 141px;
@@ -35,17 +35,17 @@
     background-color: $color-cerulean;
 
     &--one-pic {
-      @include graphic-retina("../img/catalog-one-pic", "jpg");
+      @include graphic-retina("catalog-one-pic");
       background-size: cover;
     }
 
     &--two-pic {
-      @include graphic-retina("../img/catalog-two-pic", "jpg");
+      @include graphic-retina("catalog-two-pic");
       background-size: cover;
     }
 
     &--three-pic {
-      @include graphic-retina("../img/catalog-three-pic", "jpg");
+      @include graphic-retina("catalog-three-pic");
       background-size: cover;
     }
 
@@ -129,15 +129,15 @@
 
   .catalog__item {
     &--one-pic {
-      @include graphic-retina("../img/catalog-one-pic-tablet", "jpg");
+      @include graphic-retina("catalog-one-pic-tablet");
     }
 
     &--two-pic {
-      @include graphic-retina("../img/catalog-two-pic-tablet", "jpg");
+      @include graphic-retina("catalog-two-pic-tablet");
     }
 
     &--three-pic {
-      @include graphic-retina("../img/catalog-three-pic-tablet", "jpg");
+      @include graphic-retina("catalog-three-pic-tablet");
     }
 
     &::before {
@@ -183,17 +183,17 @@
 
   .catalog__item {
     &--one-pic {
-      @include graphic-retina("../img/catalog-one-pic-mobile", "jpg");
+      @include graphic-retina("catalog-one-pic-mobile");
       background-size: cover;
     }
 
     &--two-pic {
-      @include graphic-retina("../img/catalog-two-pic-mobile", "jpg");
+      @include graphic-retina("catalog-two-pic-mobile");
       background-size: cover;
     }
 
     &--three-pic {
-      @include graphic-retina("../img/catalog-three-pic-mobile", "jpg");
+      @include graphic-retina("catalog-three-pic-mobile");
       background-size: cover;
     }
 

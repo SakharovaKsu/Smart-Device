@@ -5,14 +5,14 @@
 }
 
 @mixin graphic-webp($filename, $extname: "jpg") {
-  $webp: url("../images/#{$filename}.webp");
+  $webp: url("../img/#{$filename}.webp");
 
   @supports (background-image: $webp) {
     background-image: $webp;
   }
 
   @supports not (background-image: $webp) {
-    background-image: url("../images/#{$filename}.#{$extname}");
+    background-image: url("../img/#{$filename}.#{$extname}");
   }
 }
 

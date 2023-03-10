@@ -1,4 +1,4 @@
-export const initAccordionFooter = () => {
+export const initFooterAccordions = () => {
   const accordions = document.querySelectorAll('.accordion');
 
   accordions.forEach((el) => {

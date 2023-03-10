@@ -32,19 +32,18 @@
 
   @include hover-focus {
     color: $color-deep-sky-blue;
+
+    .header__icon {
+      fill: $color-alice-blue;
+    }
   }
 
   @include active {
     color: $color-silver;
-  }
 
-  &:hover .header__icon,
-  &:focus .header__icon {
-    fill: $color-alice-blue;
-  }
-
-  &:active .header__icon {
-    fill: $color-silver;
+    .header__icon {
+      fill: $color-silver;
+    }
   }
 }
 

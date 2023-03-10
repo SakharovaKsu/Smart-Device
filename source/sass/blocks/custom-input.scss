@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $vp-767) {
     width: 100%;
   }
 
@@ -12,7 +12,7 @@
     align-items: center;
     width: 100%;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $vp-767) {
       align-items: flex-start;
       flex-direction: column;
     }
@@ -28,7 +28,7 @@
       outline: none;
       transition: border 0.3s ease;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width:$vp-767) {
         max-width: unset;
         width: 100%;
       }
@@ -70,4 +70,17 @@
       color: $color-green;
     }
   }
+}
+
+.custom-input span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }

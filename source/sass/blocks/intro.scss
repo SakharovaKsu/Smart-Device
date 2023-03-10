@@ -5,7 +5,7 @@
   padding-left: 125px;
   background-color: $color-black-pearl;
 
-  @include graphic-retina("../../img/background-image", "jpg");
+  @include graphic-retina("background-image");
   background-position: center;
   width: 100%;
   height: auto;

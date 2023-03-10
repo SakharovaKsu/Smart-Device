@@ -1,6 +1,6 @@
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initAccordionFooter} from './modules/accordion-footer';
+import {initFooterAccordions} from './modules/footer-accordions';
 import {readMore} from './modules/read-more';
 import {scrollPage} from './modules/scroll-page';
 import {initAccordions} from './modules/accordion/init-accordion';
@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
-  initAccordionFooter();
+  initFooterAccordions();
   readMore();
   scrollPage();
   // Modules
