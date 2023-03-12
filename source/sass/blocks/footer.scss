@@ -103,7 +103,7 @@
     display: grid;
     grid-template-areas: "social social"
       "nav contact";
-      grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 30px;
     column-gap: 30px;
     justify-content: space-between;
