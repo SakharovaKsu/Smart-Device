@@ -833,7 +833,7 @@ button,
 
 .footer {
   background-color: #041827;
-  padding: 57px 0 55px 0;
+  padding: 57px 0 0 0;
   margin-top: auto;
 }
 
@@ -870,7 +870,7 @@ button,
 }
 
 .footer__item:last-child {
-  margin-bottom: 90px;
+  margin-bottom: 92px;
 }
 
 .footer h2 {
@@ -1125,13 +1125,28 @@ button,
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  margin-bottom: 11px;
-  margin-left: -5px;
+  margin-bottom: 9px;
+  margin-left: -15px;
 }
 
 .form p {
   margin: 0;
-  margin-bottom: -4px;
+  margin-bottom: -3px;
+  margin-left: -15px;
+}
+
+.form--modal p {
+  margin-left: 0;
+}
+
+.form__container {
+  margin-left: -13px;
+  width: 585px;
+}
+
+.form__container--modal {
+  width: 100%;
+  margin-left: 0;
 }
 
 .form__inner,
@@ -1144,6 +1159,13 @@ button,
   -ms-flex-align: end;
   align-items: flex-end;
   margin-top: 37px;
+}
+
+.form__inner {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .form__field {
@@ -1283,6 +1305,7 @@ button,
   border-radius: 3px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .form__button:hover {
@@ -1305,8 +1328,9 @@ button,
 
 .form__checkbox {
   position: relative;
-  padding-left: 45px;
+  padding-left: 48px;
   margin-bottom: -4px;
+  cursor: pointer;
 }
 
 .form__checkbox input {
@@ -1330,6 +1354,7 @@ button,
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .form__checkbox label:hover {
@@ -1343,7 +1368,7 @@ button,
 .form__checkbox span::before {
   position: absolute;
   content: "";
-  left: 19px;
+  left: 22px;
   top: 8px;
   width: 15px;
   height: 15px;
@@ -1357,7 +1382,7 @@ button,
   width: 7px;
   height: 7px;
   top: 11px;
-  left: 22px;
+  left: 25px;
   background-image: url("../img/svg/check-mark.svg");
 }
 
@@ -1386,9 +1411,9 @@ button,
 
 .form__wrap--modal {
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
@@ -1655,8 +1680,8 @@ button,
     content: "";
     width: 512px;
     height: 285px;
-    top: 19%;
-    left: -107%;
+    top: 18%;
+    left: -109%;
     background-size: 100%;
   }
 
@@ -1875,7 +1900,8 @@ button,
   }
 
   .container--desktop-fullwidth {
-    padding: 0 119px;
+    max-width: 1220px;
+    padding: 0;
   }
 
   .header__list {
@@ -1913,6 +1939,10 @@ button,
     padding-left: 0;
   }
 
+  .intro__box {
+    padding-left: 61px;
+  }
+
   .intro p {
     margin-bottom: 46px;
   }
@@ -1946,32 +1976,30 @@ button,
     padding: 49px 81px 542px 40px;
   }
 
+  .catalog h2 {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
   .form {
     margin-right: 0;
     padding-bottom: 252px;
-    background: -o-linear-gradient(131deg, #00b2ff 69.5%, #026593 69.5%);
-    background: linear-gradient(319deg, #00b2ff 69.5%, #026593 69.5%);
-  }
-
-  .form__box {
-    padding-left: 3px;
+    background: -o-linear-gradient(131deg, #00b2ff 68%, #026593 68%);
+    background: linear-gradient(319deg, #00b2ff 68%, #026593 68%);
   }
 
   .form__box::before {
     height: 284px;
-    width: 507px;
-  }
-
-  .form__inner {
-    margin-top: 36px;
   }
 
   .form h2 {
+    margin-left: -11px;
     margin-bottom: 8px;
   }
 
   .form p {
     margin-bottom: 0;
+    margin-left: -8px;
   }
 
   .form textarea {
@@ -2017,12 +2045,56 @@ button,
 
 @media (max-width: 1439px) {
   .container {
-    padding: 0 140px;
+    padding: 0 60px;
+  }
+
+  .header__nav {
+    max-width: 900px;
+  }
+
+  .header__button {
+    margin-right: 0;
+  }
+
+  .header__list {
+    gap: 30px;
+  }
+
+  .footer__box {
+    -ms-grid-columns: 215px 315px 282px;
+    grid-template-columns: 215px 315px 282px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .footer__list--nav {
+    gap: 20px;
+  }
+
+  .benefits__list {
+    -ms-grid-columns: 435px 435px;
+    grid-template-columns: 435px 435px;
+  }
+
+  .catalog h2 {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .catalog__list {
+    -ms-grid-columns: (281px)[3];
+    grid-template-columns: repeat(3, 281px);
+    gap: 30px;
+  }
+
+  .form__box::before {
+    left: -90%;
   }
 
   .data-accordion__box {
     margin-left: 0;
-    padding-right: 32px;
+    max-width: 900px;
   }
 }
 
@@ -2070,12 +2142,16 @@ button,
 
   .footer {
     padding-top: 49px;
+    padding-bottom: 65px;
   }
 
   .footer__box {
     display: -ms-grid;
     display: grid;
+    -ms-grid-rows: auto 30px auto;
     grid-template-areas: "social social" "nav contact";
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 30px;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
@@ -2111,7 +2187,6 @@ button,
 
   .footer__contact {
     grid-area: contact;
-    margin-left: -56px;
   }
 
   .footer__list--column {
@@ -2154,7 +2229,7 @@ button,
 
   .social__list {
     margin-top: 10px;
-    padding-left: 298px;
+    padding-left: 297px;
   }
 
   .intro {
@@ -2280,9 +2355,18 @@ button,
     content: none;
   }
 
+  .form__container {
+    margin-left: 0;
+    width: 100%;
+  }
+
   .form h2 {
     margin-left: 0;
     margin-bottom: 5px;
+  }
+
+  .form p {
+    margin-left: 0;
   }
 
   .form__inner,
@@ -2572,8 +2656,8 @@ button,
   }
 
   .benefits__list {
-    -ms-grid-columns: 270px;
-    grid-template-columns: 270px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .benefits__item {

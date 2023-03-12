@@ -114,7 +114,7 @@
 @media (max-width: ($vp-1440 - 1px)) {
   .data-accordion__box {
     margin-left: 0;
-    padding-right: 32px;
+    max-width: 900px;
   }
 }
 

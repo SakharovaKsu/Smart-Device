@@ -62,6 +62,10 @@
 }
 
 @media (max-width: ($vp-1920 - 1px)) {
+  .intro__box {
+    padding-left: 61px;
+  }
+
   .intro p {
     margin-bottom: 46px;
   }

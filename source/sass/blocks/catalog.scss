@@ -110,6 +110,23 @@
   .catalog__link {
     padding: 49px 81px 542px 40px;
   }
+
+  .catalog h2 {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: ($vp-1440 - 1px)) {
+  .catalog h2 {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(3, 281px);
+    gap: 30px;
+  }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {

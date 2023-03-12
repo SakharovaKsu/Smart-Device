@@ -16,7 +16,7 @@
 
       <!-- Шапка -->
       <header class="header">
-        <div class="container container--mobile-fullwidth">
+        <div class="container container--desktop-fullwidth container--mobile-fullwidth">
           <nav class="header__nav">
             <a class="header__logo logo" href="index.html">
               <picture>
@@ -51,7 +51,7 @@
 
         <!-- Главный экран -->
         <section class="intro">
-          <div class="container">
+          <div class="container container--desktop-fullwidth intro__box">
             <h2>Печатные платы</h2>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
             <a class="intro__button" href="#form">
@@ -159,12 +159,12 @@
                   <textarea name="comment" cols="57" rows="6" placeholder="Ваш вопрос"></textarea>
                 </div>
                 <div class="form__inner">
-                  <button class="form__button" type="submit">Задать вопрос</button>
                   <div class="form__checkbox">
                     <label for="checkbox">Я согласен на обработку  персональных данных</label>
                     <input id="checkbox" type="checkbox" name="agreement" checked required>
                     <span></span>
                   </div>
+                  <button class="form__button" type="submit">Задать вопрос</button>
                 </div>
               </form>
             </div>
@@ -174,7 +174,7 @@
 
       <!-- Подвал -->
       <footer class="footer">
-        <div class="container container--mobile-fullwidth footer__box">
+        <div class="container container--desktop-fullwidth container--mobile-fullwidth footer__box">
 
           <!-- Лого и соц. сети -->
           <div class="footer__social social">
@@ -273,7 +273,7 @@
         <div class="form form--modal modal__content" data-form-validate="data-form-validate" data-callback="base">
           <h2>Закажите звонок</h2>
           <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
-          <form class="form__container" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="form__container form__container--modal" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__inner form__inner--modal">
               <div class="form__field custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
                 <label>
@@ -292,12 +292,12 @@
               <textarea name="comment" cols="57" rows="7" placeholder="Ваш вопрос"></textarea>
             </div>
             <div class="form__wrap form__wrap--modal">
-              <button class="form__button" type="submit">Отправить</button>
               <div class="form__checkbox form__checkbox--modal">
                 <label for="checkbox-modal">Я согласен на обработку  персональных данных</label>
                 <input type="checkbox" id="checkbox-modal" checked required>
                 <span></span>
               </div>
+              <button class="form__button" type="submit">Отправить</button>
             </div>
           </form>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>

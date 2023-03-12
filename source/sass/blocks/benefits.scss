@@ -86,6 +86,12 @@
   }
 }
 
+@media (max-width: ($vp-1440 - 1px)) {
+  .benefits__list {
+    grid-template-columns: 435px 435px;
+  }
+}
+
 @media (max-width: ($vp-1024 - 1px)) {
   .benefits {
     padding-top: 80px;
@@ -119,7 +125,7 @@
   }
 
   .benefits__list {
-    grid-template-columns: 270px;
+    grid-template-columns: 1fr;
   }
 
   .benefits__item {

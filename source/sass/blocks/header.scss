@@ -94,6 +94,20 @@
   }
 }
 
+@media (max-width: ($vp-1440 - 1px)) {
+  .header__nav {
+    max-width: 900px;
+  }
+
+  .header__button {
+    margin-right: 0;
+  }
+
+  .header__list {
+    gap: 30px;
+  }
+}
+
 @media (max-width: ($vp-1024 - 1px)) {
   .header {
     position: relative;

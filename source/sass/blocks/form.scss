@@ -18,13 +18,28 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  margin-bottom: 11px;
-  margin-left: -5px;
+  margin-bottom: 9px;
+  margin-left: -15px;
 }
 
 .form p {
   margin: 0;
-  margin-bottom: -4px;
+  margin-bottom: -3px;
+  margin-left: -15px;
+}
+
+.form--modal p {
+  margin-left: 0;
+}
+
+.form__container {
+  margin-left: -13px;
+  width: 585px;
+}
+
+.form__container--modal {
+  width: 100%;
+  margin-left: 0;
 }
 
 .form__inner,
@@ -33,6 +48,10 @@
   gap: 30px;
   align-items: flex-end;
   margin-top: 37px;
+}
+
+.form__inner {
+  flex-direction: row-reverse;
 }
 
 .form__field {
@@ -105,6 +124,7 @@
   border: none;
   border-radius: 3px;
   flex-shrink: 0;
+  cursor: pointer;
 
   @include hover-focus {
     background: $color-alice-blue;
@@ -121,8 +141,9 @@
 
 .form__checkbox {
   position: relative;
-  padding-left: 45px;
+  padding-left: 48px;
   margin-bottom: -4px;
+  cursor: pointer;
 }
 
 .form__checkbox input {
@@ -145,6 +166,7 @@
   line-height: 16px;
   color: $color-default-white;
   opacity: 0.8;
+  cursor: pointer;
 
   @include hover-focus {
     color: $color-black-pearl;
@@ -154,7 +176,7 @@
 .form__checkbox span::before {
   position: absolute;
   content: "";
-  left: 19px;
+  left: 22px;
   top: 8px;
   width: 15px;
   height: 15px;
@@ -168,7 +190,7 @@
   width: 7px;
   height: 7px;
   top: 11px;
-  left: 22px;
+  left: 25px;
   background-image: url("../img/svg/check-mark.svg");
 }
 
@@ -193,7 +215,7 @@
 }
 
 .form__wrap--modal {
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: stretch;
   gap: 15px;
   margin-top: 25px;
@@ -208,14 +230,20 @@
   left: 12px;
 }
 
+@media (max-width: ($vp-1440 - 1px)) {
+  .form__box::before {
+    left: -90%;
+  }
+}
+
 @media (min-width: $vp-1024) {
   .form__box::before {
     position: absolute;
     content: "";
     width: 512px;
     height: 285px;
-    top: 19%;
-    left: -107%;
+    top: 18%;
+    left: -109%;
 
     @include graphic-retina("paper-airplane");
     background-size: 100%;
@@ -226,28 +254,21 @@
   .form {
     margin-right: 0;
     padding-bottom: 252px;
-    background: linear-gradient(319deg, $color-deep-sky-blue 69.5%, $color-cerulean 69.5%);
+    background: linear-gradient(319deg, $color-deep-sky-blue 68%, $color-cerulean 68%);
   }
 
-  .form__box {
-    padding-left: 3px;
-
-    &::before {
-      height: 284px;
-      width: 507px;
-    }
-  }
-
-  .form__inner {
-    margin-top: 36px;
+  .form__box::before {
+    height: 284px;
   }
 
   .form h2 {
+    margin-left: -11px;
     margin-bottom: 8px;
   }
 
   .form p {
     margin-bottom: 0;
+    margin-left: -8px;
   }
 
   .form textarea {
@@ -272,9 +293,18 @@
     }
   }
 
+  .form__container {
+    margin-left: 0;
+    width: 100%;
+  }
+
   .form h2 {
     margin-left: 0;
     margin-bottom: 5px;
+  }
+
+  .form p {
+    margin-left: 0;
   }
 
   .form__inner,

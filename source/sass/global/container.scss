@@ -8,12 +8,13 @@
     padding: 0 110px;
 
     &--desktop-fullwidth {
-      padding: 0 119px;
+      max-width: 1220px;
+      padding: 0;
     }
   }
 
   @include vp-1439 {
-    padding: 0 140px;
+    padding: 0 60px;
   }
 
   @include vp-1023 {
