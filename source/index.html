@@ -158,11 +158,13 @@
                 <div class="form__comment custom-textarea" data-validate-type="text">
                   <textarea name="comment" cols="57" rows="6" placeholder="Ваш вопрос"></textarea>
                 </div>
-                <div class="form__inner">
-                  <div class="form__checkbox">
-                    <label for="checkbox">Я согласен на обработку  персональных данных</label>
-                    <input id="checkbox" type="checkbox" name="agreement" checked required>
-                    <span></span>
+                <div class="form__inner form__inner--reverse">
+                  <div class="form__checkbox" data-validate-type="checkbox">
+                    <label>
+                      <input type="checkbox" name="agreement" checked required>
+                      <span></span>
+                      Я согласен на обработку  персональных данных
+                    </label>
                   </div>
                   <button class="form__button" type="submit">Задать вопрос</button>
                 </div>
@@ -292,10 +294,12 @@
               <textarea name="comment" cols="57" rows="7" placeholder="Ваш вопрос"></textarea>
             </div>
             <div class="form__wrap form__wrap--modal">
-              <div class="form__checkbox form__checkbox--modal">
-                <label for="checkbox-modal">Я согласен на обработку  персональных данных</label>
-                <input type="checkbox" id="checkbox-modal" checked required>
-                <span></span>
+              <div class="form__checkbox form__checkbox--modal" data-validate-type="checkbox">
+                <label>
+                  <input type="checkbox" checked required>
+                  <span></span>
+                  Я согласен на обработку  персональных данных
+                </label>
               </div>
               <button class="form__button" type="submit">Отправить</button>
             </div>
