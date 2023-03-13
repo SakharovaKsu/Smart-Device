@@ -1146,7 +1146,7 @@ button,
 
 .form__container {
   margin-left: -13px;
-  width: 585px;
+  max-width: 585px;
 }
 
 .form__container--modal {
