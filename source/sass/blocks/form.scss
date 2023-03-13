@@ -243,8 +243,15 @@
     margin-left: 0;
   }
 
+  .form__box,
+  .form__container {
+    max-width: 500px;
+  }
+
   .form__box::before {
     left: -90%;
+    height: 223px;
+    width: 400px;
   }
 }
 
