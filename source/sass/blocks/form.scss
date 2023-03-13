@@ -253,6 +253,10 @@
     height: 223px;
     width: 400px;
   }
+
+  .form__inner--reverse {
+    gap: 0;
+  }
 }
 
 @media (min-width: $vp-1024) {
@@ -313,8 +317,8 @@
   }
 
   .form__container {
+    max-width: 100%;
     margin-left: 0;
-    width: 100%;
   }
 
   .form h2 {
@@ -394,7 +398,7 @@
   }
 
   .form__checkbox {
-    padding-left: 30px;
+    padding-left: 0;
   }
 
   .form__checkbox span::before {

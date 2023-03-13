@@ -2145,6 +2145,10 @@ button,
     width: 400px;
   }
 
+  .form__inner--reverse {
+    gap: 0;
+  }
+
   .data-accordion__box {
     margin-left: 0;
     max-width: 900px;
@@ -2409,8 +2413,8 @@ button,
   }
 
   .form__container {
+    max-width: 100%;
     margin-left: 0;
-    width: 100%;
   }
 
   .form h2 {
@@ -2879,7 +2883,7 @@ button,
   }
 
   .form__checkbox {
-    padding-left: 30px;
+    padding-left: 0;
   }
 
   .form__checkbox span::before {
